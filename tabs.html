@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <title>Tabs</title>
     <link rel="stylesheet" type="text/css" href="stylesheets\tabs.css">
+<<<<<<< Updated upstream
+=======
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        .panel .panel-heading {
+            background: #FFBFC3;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: verdana
+        }
+        .panel .panel-heading:hover {
+            background: grey;
+            color: white;
+        }
+    </style>
+>>>>>>> Stashed changes
 </head>
 
 <body>
     <h1 class="title">Tabs - Teste</h1>
     <div class="tabContainer">
         <div class="buttonContainer">
+<<<<<<< Updated upstream
             <button onclick="showPanel(0,'#f44336')">Obrigatórias e Eletivas</button>
             <button onclick="showPanel(1,'#4caf50')">Optativas</button>
             <button onclick="showPanel(2,'#2196f3')">Atividades</button>
@@ -22,5 +44,46 @@
     </div>
 
     <script src="scripts\scriptTabs.js"></script>
+=======
+            <button onclick="showPanel(0,'#f44336')" style="border-left: 2px solid black;">Obrigatórias</button>
+            <button onclick="showPanel(1,'#4caf50')">Eletivas</button>
+            <button onclick="showPanel(2,'#2196f3')">Optativas</button>
+            <button onclick="showPanel(3,'#51F9f4')">Atividades</button>
+        </div>
+        <div class="tabPanel">
+            <p>Tab 1</p>
+            <p>Tab 1</p>
+            <p>Tab 1</p>
+            <p>Tab 1</p>
+            <p>Tab 1</p>
+            <p>Tab 1</p>
+            <p>Tab 1</p>
+            <p>Tab 1</p>
+            <p>Tab 1</p>
+        </div>
+        <div class="tabPanel">
+            <p>Tab 2</p>
+            <p>Tab 2</p>
+            <p>Tab 2</p>
+            <p>Tab 2</p>
+        </div>
+        <div class="tabPanel">Tab 3</div>
+        <div class="tabPanel">Tab 4</div>
+    </div>
+
+    <script src="scripts\scriptTabs.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
+    <script>
+        function toggleChevron(e) {
+            var theAccordion = $(this).closest('.panel-group');
+            $(e.target)
+                .prev('.panel-heading')
+                .find('i.indicator')
+        }
+        $('.panel-group').on('shown.bs.collapse', toggleChevron);
+        $('.panel-group').on('hidden.bs.collapse', toggleChevron);
+    </script>
+>>>>>>> Stashed changes
 </body>
 </html>

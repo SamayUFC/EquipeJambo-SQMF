@@ -28,7 +28,11 @@ header .container-header nav a{
     text-decoration: none;
     color: black;
     font-family: var(--font-header);
+<<<<<<< Updated upstream
     font-size: 32px;
+=======
+    font-size: 1em;
+>>>>>>> Stashed changes
 }
 
 header .container-header nav a:hover{
@@ -36,6 +40,14 @@ header .container-header nav a:hover{
     text-decoration: underline;
 }
 
+<<<<<<< Updated upstream
+=======
+header .container-header img {
+    height: 60px;
+    width: 90px;
+}
+
+>>>>>>> Stashed changes
 main .container-main1{
     display: flex;
     flex-direction: column;

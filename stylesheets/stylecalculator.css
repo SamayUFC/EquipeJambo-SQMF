@@ -30,6 +30,14 @@ header .container-header nav a:hover{
     text-decoration: underline;
 }
 
+<<<<<<< Updated upstream
+=======
+header .container-header img {
+    height: 60px;
+    width: 90px;
+}
+
+>>>>>>> Stashed changes
 ul {
     list-style-type: none;
 }
