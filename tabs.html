@@ -2,30 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Tabs</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" type="text/css" href="stylesheets\tabs.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
-    <style>
-        .panel .panel-heading {
-            background: #FFBFC3;
-            color: black;
-            font-weight: bold;
-            font-size: 20px;
-            font-family: verdana
-        }
-        .panel .panel-heading:hover {
-            background: grey;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
-    <h1 class="title">Tabs - Teste</h1>
+    <h1 class="title">Calculadora</h1>
     <form action="submit" method="post">
         <div class="tabContainer">
             <div class="buttonContainer">
@@ -35,15 +21,50 @@
                 <button onclick="showPanel(3,'#51F9f4')" type="button">Atividades</button>
             </div>
             <div class="tabPanel">
-                <p>Tab 1</p>
-                <p>Tab 1</p>
-                <p>Tab 1</p>
-                <p>Tab 1</p>
-                <p>Tab 1</p>
-                <p>Tab 1</p>
-                <p>Tab 1</p>
-                <p>Tab 1</p>
-                <p>Tab 1</p>
+                <div>
+                    <div class="semestres">
+                        <div class="primeiroSemestre">
+                            <div style="text-align: center; padding: 2em;">
+                                1º Semestre
+                            </div>
+                        </div>
+                        <div class="segundoSemestre">
+                            <div style="text-align: center; padding: 2em;">
+                                2º Semestre
+                            </div>
+                        </div>
+                        <div class="terceiroSemestre">
+                            <div style="text-align: center; padding: 2em;">
+                                3º Semestre
+                            </div>
+                        </div>
+                        <div class="quartoSemestre">
+                            <div style="text-align: center; padding: 2em;">
+                                4º Semestre
+                            </div>
+                        </div>
+                        <div class="quintoSemestre">
+                            <div style="text-align: center; padding: 2em;">
+                                5º Semestre
+                            </div>
+                        </div>
+                        <div class="sextoSemestre">
+                            <div style="text-align: center; padding: 2em;">
+                                6º Semestre
+                            </div>
+                        </div>
+                        <div class="setimoSemestre">
+                            <div style="text-align: center; padding: 2em;">
+                                7º Semestre
+                            </div>
+                        </div>
+                        <div class="oitavoSemestre">
+                            <div style="text-align: center; padding: 2em;">
+                                8º Semestre
+                            </div>
+                        </div>
+                        </div>
+                </div>
             </div>
             <div class="tabPanel">
                 <p>Tab 2</p>
@@ -56,7 +77,8 @@
         </div>
     </form>
 
-    <script src="scripts\scriptTabs.js"></script>
+    <script src="scripts/scriptTabs.js"></script>
+    <script src="scripts/scriptDisciplinas.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> 
     <script>
