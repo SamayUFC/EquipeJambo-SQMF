@@ -18,7 +18,7 @@
 }
 
 .tabContainer{
-    width: 80%;
+    width: 92%;
     height: 350px;
     margin: auto;
 }
@@ -39,9 +39,9 @@
     border-top-right-radius: 16px;
     outline:none;
     cursor: pointer;
-    padding: 10px;
+    padding: 8px;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #eee;
 }
 
@@ -52,11 +52,11 @@
 .tabContainer .tabPanel{
     height: auto;
     background-color: gray;
-    color: white;
+    color: #000000;
     text-align: center;
     box-sizing: border-box;
     font-family: sans-serif;
-    font-size: 22px;
+    font-size: 16px;
     display: none;
     padding: 1em;
     border-bottom-left-radius: 16px;
@@ -66,18 +66,34 @@
 
 .semestres {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 16px;
-    grid-row-gap: 32px;
-    height: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 20px;
 }
-    
-.primeiroSemestre { grid-area: 1 / 1 / 2 / 2; display: block; text-align: left;}
-.segundoSemestre { grid-area: 1 / 2 / 2 / 3; display: block; text-align: left;}
-.terceiroSemestre { grid-area: 2 / 1 / 3 / 2; display: block; text-align: left;}
-.quartoSemestre { grid-area: 2 / 2 / 3 / 3; display: block}
-.quintoSemestre { grid-area: 3 / 1 / 4 / 2; display: block}
-.sextoSemestre { grid-area: 3 / 2 / 4 / 3; display: block}
-.setimoSemestre { grid-area: 4 / 1 / 5 / 2; display: block}
-.oitavoSemestre { grid-area: 4 / 2 / 5 / 3; display: block}
+
+#primeiroSemestre { grid-area: 1 / 1 / 2 / 2; display: block; text-align: left;}
+#segundoSemestre { grid-area: 1 / 2 / 2 / 3; display: block; text-align: left;}
+#terceiroSemestre { grid-area: 1 / 3 / 2 / 4; display: block; text-align: left;}
+#quartoSemestre { grid-area: 2 / 1 / 3 / 2; display: block; text-align: left;}
+#quintoSemestre { grid-area: 2 / 2 / 3 / 3; display: block; text-align: left;}
+#sextoSemestre { grid-area: 2 / 3 / 3 / 4; display: block; text-align: left;}
+#setimoSemestre { grid-area: 3 / 1 / 4 / 2; display: block; text-align: left;}
+#oitavoSemestre { grid-area: 3 / 2 / 4 / 3; display: block; text-align: left;}
+#nonoSemestre { grid-area: 3 / 3 / 4 / 4; display: none; text-align: left;}
+
+.semestres .semestreHeader {
+    text-align: center;
+    width: 80%;
+    margin: 1.5em auto;
+    padding: 1em;
+    background-color: #FFBFC3;
+    border: solid 2px black;
+    border-radius: 16px;
+    box-shadow: 4px 4px black
+}
+
+.semestres .semestreInputs {
+    width: 80%;
+    margin: auto;
+}

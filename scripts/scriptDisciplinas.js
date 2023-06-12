@@ -85,10 +85,9 @@ let disciplinas = [
     },
 ];
 
-let outFirst = document.querySelectorAll(".primeiroSemestre");
-let outSecond = document.querySelectorAll(".segundoSemestre");
-let outThird = document.querySelectorAll(".terceiroSemestre");
-
+let outFirst = document.querySelectorAll("#primeiroSemestreInputs");
+let outSecond = document.querySelectorAll("#segundoSemestreInputs");
+let outThird = document.querySelectorAll("#terceiroSemestreInputs");
 
 disciplinas.forEach((disciplina)=> {
     if (disciplina.semestre == 1) {
@@ -106,4 +105,22 @@ disciplinas.forEach((disciplina)=> {
         `<input type="checkbox" id=${disciplina.cod} name=${disciplina.nome} value=${disciplina.cargaHoraria} />
         <label for=${disciplina.cod}>${disciplina.nome}</label><br>`;
     }
+});
+
+
+const submitCheckboxes = document.querySelector('#submitCheckboxes');
+submitCheckboxes.addEventListener('click', (event) => {
+    let selectedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked')
+    let horasValores = 0;
+    for (let i = 0; i <= selectedCheckboxes.length; i++) {
+        selectedCheckboxes.forEach((checkbox) => {
+            horasValores += Number(checkbox.value);
+        });
+    }
+    alert(Number(horasValores));
+    let names = [];
+    selectedCheckboxes.forEach((checkbox) => {
+        names.push(" " + checkbox.name);
+    });
+    alert(names);
 });

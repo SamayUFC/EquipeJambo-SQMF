@@ -11,71 +11,98 @@
 </head>
 
 <body>
-    <h1 class="title">Calculadora</h1>
-    <form action="submit" method="post">
-        <div class="tabContainer">
-            <div class="buttonContainer">
-                <button onclick="showPanel(0,'#f44336')" style="border-left: 2px solid black;" type="button">Obrigatórias</button>
-                <button onclick="showPanel(1,'#4caf50')" type="button">Eletivas</button>
-                <button onclick="showPanel(2,'#2196f3')" type="button">Optativas</button>
-                <button onclick="showPanel(3,'#51F9f4')" type="button">Atividades</button>
-            </div>
-            <div class="tabPanel">
-                <div>
-                    <div class="semestres">
-                        <div class="primeiroSemestre">
-                            <div style="text-align: center; padding: 2em;">
-                                1º Semestre
-                            </div>
-                        </div>
-                        <div class="segundoSemestre">
-                            <div style="text-align: center; padding: 2em;">
-                                2º Semestre
-                            </div>
-                        </div>
-                        <div class="terceiroSemestre">
-                            <div style="text-align: center; padding: 2em;">
-                                3º Semestre
-                            </div>
-                        </div>
-                        <div class="quartoSemestre">
-                            <div style="text-align: center; padding: 2em;">
-                                4º Semestre
-                            </div>
-                        </div>
-                        <div class="quintoSemestre">
-                            <div style="text-align: center; padding: 2em;">
-                                5º Semestre
-                            </div>
-                        </div>
-                        <div class="sextoSemestre">
-                            <div style="text-align: center; padding: 2em;">
-                                6º Semestre
-                            </div>
-                        </div>
-                        <div class="setimoSemestre">
-                            <div style="text-align: center; padding: 2em;">
-                                7º Semestre
-                            </div>
-                        </div>
-                        <div class="oitavoSemestre">
-                            <div style="text-align: center; padding: 2em;">
-                                8º Semestre
-                            </div>
-                        </div>
-                        </div>
-                </div>
-            </div>
-            <div class="tabPanel">
-                <p>Tab 2</p>
-                <p>Tab 2</p>
-                <p>Tab 2</p>
-                <p>Tab 2</p>
-            </div>
-            <div class="tabPanel">Tab 3</div>
-            <div class="tabPanel">Tab 4</div>
+    <header>
+        <div class="container-header">
+            <img src="assets/jk-placeholder-image.jpg" alt="imagem-logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="#">Sobre</a>
+                <a href="tools-page.html">Ferramentas</a>
+            </nav>
         </div>
-    </form>
+    </header>
+
+    <main>
+        <h1 class="title">Calculadora</h1>
+        <form action="submit" method="post">
+            <div class="tabContainer">
+                <div class="buttonContainer">
+                    <button onclick="showPanel(0,'#F98585')" style="border-left: 2px solid black;" type="button">Obrigatórias</button>
+                    <button onclick="showPanel(1,'#FFBE99')" type="button">Eletivas</button>
+                    <button onclick="showPanel(2,'#91FBB5')" type="button">Optativas</button>
+                    <button onclick="showPanel(3,'#8BA4FF')" type="button">Atividades</button>
+                </div>
+                <div class="tabPanel">
+                    <div>
+                        <div class="semestres">
+                            <div id="primeiroSemestre">
+                                <div class="semestreHeader">
+                                    1º Semestre
+                                </div>
+                                <div class="semestreInputs" id="primeiroSemestreInputs"></div>
+                            </div>
+                            <div id="segundoSemestre">
+                                <div class="semestreHeader">
+                                    2º Semestre
+                                </div>
+                                <div class="semestreInputs" id="segundoSemestreInputs"></div>
+                            </div>
+                            <div id="terceiroSemestre">
+                                <div class="semestreHeader">
+                                    3º Semestre
+                                </div>
+                                <div class="semestreInputs" id="terceiroSemestreInputs"></div>
+                            </div>
+                            <div id="quartoSemestre">
+                                <div class="semestreHeader">
+                                    4º Semestre
+                                </div>
+                                <div class="semestreInputs" id="quartoSemestreInputs"></div>
+                            </div>
+                            <div id="quintoSemestre">
+                                <div class="semestreHeader">
+                                    5º Semestre
+                                </div>
+                                <div class="semestreInputs" id="quintoSemestreInputs"></div>
+                            </div>
+                            <div id="sextoSemestre">
+                                <div class="semestreHeader">
+                                    6º Semestre
+                                </div>
+                                <div class="semestreInputs" id="sextoSemestreInputs"></div>
+                            </div>
+                            <div id="setimoSemestre">
+                                <div class="semestreHeader">
+                                    7º Semestre
+                                </div>
+                                <div class="semestreInputs" id="setimoSemestreInputs"></div>
+                            </div>
+                            <div id="oitavoSemestre">
+                                <div class="semestreHeader">
+                                    8º Semestre
+                                </div>
+                                <div class="semestreInputs" id="oitavoSemestreInputs"></div>
+                            </div>
+                            <div id="nonoSemestre">
+                                <div class="semestreHeader">
+                                    9º Semestre
+                                </div>
+                                <div class="semestreInputs" id="nonoSemestreInputs"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabPanel">
+                    <p>Tab 2</p>
+                    <p>Tab 2</p>
+                    <p>Tab 2</p>
+                    <p>Tab 2</p>
+                </div>
+                <div class="tabPanel">Tab 3</div>
+                <div class="tabPanel">Tab 4</div>
+            </div>
+        </form>
+    </main>
 
     <script src="scripts/scriptTabs.js"></script>
     <script src="scripts/scriptDisciplinas.js"></script>
