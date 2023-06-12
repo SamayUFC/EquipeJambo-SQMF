@@ -41,7 +41,7 @@ header .container-header nav a:hover{
 .title{
     font-family: sans-serif;
     color: #dc2d5e;
-    text-align: center;
+    margin-left: 4%;
 }
 
 .tabContainer{
