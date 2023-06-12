@@ -22,4 +22,4 @@ function showPanel(panelIndex,colorCode) {
     tabPanels[panelIndex].style.borderRight="solid 2px black";
 }
 
-showPanel(0,'#f44336');
+showPanel(0,'#F98585');

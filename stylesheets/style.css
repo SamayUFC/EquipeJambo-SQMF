@@ -24,13 +24,8 @@ header .container-header{
 }
 
 header .container-header img {
-<<<<<<< Updated upstream
     height: 40px;
     width: 60px;
-=======
-    height: 60px;
-    width: 90px;
->>>>>>> Stashed changes
 }
 
 header .container-header nav a{
@@ -38,11 +33,7 @@ header .container-header nav a{
     text-decoration: none;
     color: black;
     font-family: var(--font-header);
-<<<<<<< Updated upstream
-    font-size: 32px;
-=======
     font-size: 1em;
->>>>>>> Stashed changes
 }
 
 header .container-header nav a:hover{

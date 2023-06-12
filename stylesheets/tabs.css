@@ -1,3 +1,30 @@
+header .container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 4%;
+}
+
+header .container-header img {
+    height: 40px;
+    width: 60px;
+}
+
+header .container-header nav a{
+    padding-left: 53px;
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-header);
+    font-size: 1em;
+}
+
+header .container-header nav a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .panel .panel-heading {
     background: #FFBFC3;
     color: black;
@@ -18,6 +45,7 @@
 }
 
 .tabContainer{
+    border: solid 1px black;
     width: 92%;
     height: 350px;
     margin: auto;
