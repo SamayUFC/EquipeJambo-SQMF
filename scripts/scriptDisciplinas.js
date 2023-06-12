@@ -118,6 +118,7 @@ submitCheckboxes.addEventListener('click', (event) => {
         });
     }
     alert(Number(horasValores));
+    
     let names = [];
     selectedCheckboxes.forEach((checkbox) => {
         names.push(" " + checkbox.name);

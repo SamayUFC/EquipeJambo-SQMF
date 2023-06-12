@@ -92,7 +92,7 @@ header .container-header nav a:hover{
     box-shadow: 4px 4px black;
 }
 
-.semestres {
+.semestresObrigatorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -110,7 +110,17 @@ header .container-header nav a:hover{
 #oitavoSemestre { grid-area: 3 / 2 / 4 / 3; display: block; text-align: left;}
 #nonoSemestre { grid-area: 3 / 3 / 4 / 4; display: none; text-align: left;}
 
-.semestres .semestreHeader {
+.semestresEletivas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 20px;
+}
+
+#quartoSemestreEletivas { grid-area: 1 / 1 / 2 / 2; display: block; text-align: left;}
+#quintoSemestreEletivas { grid-area: 1 / 2 / 2 / 3; display: block; text-align: left;}
+
+.semestreHeaderObrigatorias {
     text-align: center;
     width: 80%;
     margin: 1.5em auto;
@@ -121,7 +131,18 @@ header .container-header nav a:hover{
     box-shadow: 4px 4px black
 }
 
-.semestres .semestreInputs {
+.semestreHeaderEletivas {
+    text-align: center;
+    width: 80%;
+    margin: 1.5em auto;
+    padding: 1em;
+    background-color: #FFDCC3;
+    border: solid 2px black;
+    border-radius: 16px;
+    box-shadow: 4px 4px black
+}
+
+.semestresObrigatorias .semestreInputs {
     width: 80%;
     margin: auto;
 }
