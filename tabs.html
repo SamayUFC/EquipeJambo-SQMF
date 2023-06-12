@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Calculadora</title>
-    <link rel="stylesheet" type="text/css" href="stylesheets\tabs.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/tabs.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/multi-select-tag.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
@@ -108,7 +109,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="tabPanel">Tab 3</div>
+                <div class="tabPanel">
+                    <select name="optativasSelect" id="optativasSelect" class="form-control form-control-lg" multiple>
+                        <option value="1">Teste 1</option>
+                        <option value="2">Teste 2</option>
+                        <option value="3">Teste 3</option>
+                        <option value="4">Teste 4</option>
+                        <option value="5">Teste 5</option>
+                    </select>
+                </div>
                 <div class="tabPanel">Tab 4</div>
             </div>
         </form>
@@ -116,6 +125,10 @@
 
     <script src="scripts/scriptTabs.js"></script>
     <script src="scripts/scriptDisciplinas.js"></script>
+    <script src="scripts/multi-select-tag.js"></script>
+    <script>
+        new MultiSelectTag('optativasSelect');
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
