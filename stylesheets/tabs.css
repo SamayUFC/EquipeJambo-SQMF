@@ -45,7 +45,6 @@ header .container-header nav a:hover{
 }
 
 .tabContainer{
-    border: solid 1px black;
     width: 92%;
     height: 350px;
     margin: auto;
@@ -84,7 +83,7 @@ header .container-header nav a:hover{
     text-align: center;
     box-sizing: border-box;
     font-family: sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     display: none;
     padding: 1em;
     border-bottom-left-radius: 16px;
