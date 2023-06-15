@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Lexend+Mega:wght@800&family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-title: 'Lexend Mega', sans-serif;
+    --font-text: 'Nunito', sans-serif;
+    --font-header: 'Lexend', sans-serif;
+}
+
 header .container-header{
     display: flex;
     flex-direction: row;
@@ -39,9 +53,11 @@ header .container-header nav a:hover{
 }
 
 .title{
-    font-family: sans-serif;
+    font-family: var(--font-title);
     color: #dc2d5e;
     margin-left: 4%;
+    margin-left: 4%;
+    width: fit-content;
 }
 
 .tabContainer{
@@ -67,7 +83,7 @@ header .container-header nav a:hover{
     outline:none;
     cursor: pointer;
     padding: 8px;
-    font-family: sans-serif;
+    font-family: var(--font-title);
     font-size: 20px;
     background-color: #eee;
 }
