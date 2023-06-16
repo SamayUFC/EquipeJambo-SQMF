@@ -10,10 +10,7 @@
 
 
     function getAll() {
-        
-    
 
-        alert('teste');
 
         const endpoint = url('78');             
         try {                

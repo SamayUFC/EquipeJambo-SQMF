@@ -85,6 +85,42 @@ let disciplinas = [
     },
 ];
 
+function url(params) {
+    if(params){
+        return "http://localhost/EquipeJambo-SQMF/api_meuDiploma/public/matriz/"+params
+    }else{
+        return "http://localhost/EquipeJambo-SQMF/api_meuDiploma/public/"; 
+    }
+ 
+}
+
+
+
+function getAll() {
+
+
+    const endpoint = url('78');             
+    try {                
+        
+        fetch(endpoint)
+        .then(response => response.json())
+
+        .then(data => {
+        console.log(data);
+
+        })
+        
+        
+        
+                    
+    } catch(e) {
+        console.log(e);
+    }
+
+}
+
+getAll();
+
 let outFirst = document.querySelectorAll("#primeiroSemestreInputs");
 let outSecond = document.querySelectorAll("#segundoSemestreInputs");
 let outThird = document.querySelectorAll("#terceiroSemestreInputs");
