@@ -1,8 +1,8 @@
     function url(params) {
         if(params){
-            return "http://localhost/api_meuDiploma/public/matriz/"+params
+            return "http://localhost/EquipeJambo-SQMF/api_meuDiploma/public/matriz/"+params
         }else{
-            return "http://localhost/api_meuDiploma/public/"; 
+            return "http://localhost/EquipeJambo-SQMF/api_meuDiploma/public/"; 
         }
      
     }
