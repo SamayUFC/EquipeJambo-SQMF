@@ -97,26 +97,17 @@ function url(params) {
 
 
 function getAll() {
-
-
     const endpoint = url('78');             
-    try {                
-        
+    try {                     
         fetch(endpoint)
         .then(response => response.json())
 
         .then(data => {
-        console.log(data);
-
-        })
-        
-        
-        
-                    
+            console.log(data);
+        })              
     } catch(e) {
         console.log(e);
     }
-
 }
 
 getAll();
