@@ -150,7 +150,19 @@ function getAll() {
                         `<input class="form-check-input" type="checkbox" id="flexCheckDefault" name=${course.componente} value=${course.cargahoraria} />
                         <label for="flexCheckDefault">${course.componente}</label><br>`;
                     }
-                } 
+                }
+                if (course.natureza == "ELETIVA") {
+                    if (course.semestre == 4) {
+                        outElectivesFourth[0].innerHTML = outElectivesFourth[0].innerHTML + 
+                        `<input class="form-check-input" type="checkbox" id="flexCheckDefault" name=${course.componente} value=${course.cargahoraria} />
+                        <label for="flexCheckDefault">${course.componente}</label><br>`;
+                    }
+                    if (course.semestre == 5) {
+                        outElectivesFifth[0].innerHTML = outElectivesFifth[0].innerHTML + 
+                        `<input class="form-check-input" type="checkbox" id="flexCheckDefault" name=${course.componente} value=${course.cargahoraria} />
+                        <label for="flexCheckDefault">${course.componente}</label><br>`;
+                    }
+                }
                 if (course.natureza == "OPTATIVA") {
                     outOptionals[0].innerHTML = outOptionals[0].innerHTML +
                     `<option value="1">${course.componente}</option>`;
@@ -173,7 +185,9 @@ let outSixth = document.querySelectorAll("#sextoSemestreInputs");
 let outSeventh = document.querySelectorAll("#setimoSemestreInputs");
 let outEighth = document.querySelectorAll("#oitavoSemestreInputs");
 let outNinth = document.querySelectorAll("#nonoSemestreInputs");
-let outOptionals = document.querySelectorAll("#optativasSelect");
+let outElectivesFourth = document.querySelectorAll('#quartoSemestreInputsEletivas');
+let outElectivesFifth = document.querySelectorAll('#quintoSemestreInputsEletivas');
+let outOptionals = document.querySelector("#optativasInput");
 
 
 // const submitCheckboxes = document.querySelector('#submitCheckboxes');
