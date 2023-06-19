@@ -17,7 +17,7 @@ header .container-header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    background: #FFFFFF;
     padding: 25px 4%;
 }
 
@@ -37,6 +37,10 @@ header .container-header nav a{
 header .container-header nav a:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+
+main .container-main {
+    background: #FAF5F2;
 }
 
 .panel .panel-heading {
