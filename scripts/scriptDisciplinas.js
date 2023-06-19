@@ -163,10 +163,6 @@ function getAll() {
                         <label for="flexCheckDefault">${course.componente}</label><br>`;
                     }
                 }
-                if (course.natureza == "OPTATIVA") {
-                    outOptionals[0].innerHTML = outOptionals[0].innerHTML +
-                    `<option value="1">${course.componente}</option>`;
-                }
             });
         })              
     } catch(e) {
@@ -187,7 +183,7 @@ let outEighth = document.querySelectorAll("#oitavoSemestreInputs");
 let outNinth = document.querySelectorAll("#nonoSemestreInputs");
 let outElectivesFourth = document.querySelectorAll('#quartoSemestreInputsEletivas');
 let outElectivesFifth = document.querySelectorAll('#quintoSemestreInputsEletivas');
-let outOptionals = document.querySelector("#optativasInput");
+// let outOptionals = document.querySelectorAll("#optativasInput");
 
 
 // const submitCheckboxes = document.querySelector('#submitCheckboxes');
