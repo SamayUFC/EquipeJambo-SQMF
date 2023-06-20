@@ -40,6 +40,11 @@ header .container-header nav a:hover{
 
 main .container-main {
     background: #FAF5F2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    bottom: 0;
 }
 
 .title{
@@ -161,4 +166,6 @@ main .container-main {
     width: 100px;
     text-align: center;
     margin: 2em auto;
+    display: flex;
+    justify-content: center;
 }
