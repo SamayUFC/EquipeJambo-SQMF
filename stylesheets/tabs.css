@@ -156,3 +156,9 @@ main .container-main {
     border-radius: 16px;
     box-shadow: 4px 4px black
 }
+
+#submitCheckboxes {
+    width: 100px;
+    text-align: center;
+    margin: 2em auto;
+}
