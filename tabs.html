@@ -25,104 +25,108 @@
     <main>
         <div class="container-main">
             <h1 class="title">Calculadora</h1>
-            <form action="submit" method="post">
-                <div class="tabContainer">
-                    <div class="buttonContainer">
-                        <button onclick="showPanel(0,'#F98585')" style="border-left: 2px solid black;" type="button">Obrigatórias</button>
-                        <button onclick="showPanel(1,'#FFBE99')" type="button">Eletivas</button>
-                        <button onclick="showPanel(2,'#91FBB5')" type="button">Optativas</button>
-                        <button onclick="showPanel(3,'#8BA4FF')" type="button">Atividades</button>
-                    </div>
-                    <div class="tabPanel">
-                        <div>
-                            <div class="semestresObrigatorias">
-                                <div id="primeiroSemestre">
-                                    <div class="semestreHeaderObrigatorias">
-                                        1º Semestre
+            <div>
+                <form action="submit" method="post">
+                    <div class="tabContainer">
+                        <div class="buttonContainer">
+                            <button onclick="showPanel(0,'#F98585')" style="border-left: 2px solid black;" type="button">Obrigatórias</button>
+                            <button onclick="showPanel(1,'#FFBE99')" type="button">Eletivas</button>
+                            <button onclick="showPanel(2,'#91FBB5')" type="button">Optativas</button>
+                            <button onclick="showPanel(3,'#8BA4FF')" type="button">Atividades</button>
+                        </div>
+                        <div class="contentContainer">
+                            <div class="tabPanel">
+                                <div>
+                                    <div class="semestresObrigatorias">
+                                        <div id="primeiroSemestre">
+                                            <div class="semestreHeaderObrigatorias">
+                                                1º Semestre
+                                            </div>
+                                            <div class="semestreInputs" id="primeiroSemestreInputs"></div>
+                                        </div>
+                                        <div id="segundoSemestre">
+                                            <div class="semestreHeaderObrigatorias">
+                                                2º Semestre
+                                            </div>
+                                            <div class="semestreInputs" id="segundoSemestreInputs"></div>
+                                        </div>
+                                        <div id="terceiroSemestre">
+                                            <div class="semestreHeaderObrigatorias">
+                                                3º Semestre
+                                            </div>
+                                            <div class="semestreInputs" id="terceiroSemestreInputs"></div>
+                                        </div>
+                                        <div id="quartoSemestre">
+                                            <div class="semestreHeaderObrigatorias">
+                                                4º Semestre
+                                            </div>
+                                            <div class="semestreInputs" id="quartoSemestreInputs"></div>
+                                        </div>
+                                        <div id="quintoSemestre">
+                                            <div class="semestreHeaderObrigatorias">
+                                                5º Semestre
+                                            </div>
+                                            <div class="semestreInputs" id="quintoSemestreInputs"></div>
+                                        </div>
+                                        <div id="sextoSemestre">
+                                            <div class="semestreHeaderObrigatorias">
+                                                6º Semestre
+                                            </div>
+                                            <div class="semestreInputs" id="sextoSemestreInputs"></div>
+                                        </div>
+                                        <div id="setimoSemestre">
+                                            <div class="semestreHeaderObrigatorias">
+                                                7º Semestre
+                                            </div>
+                                            <div class="semestreInputs" id="setimoSemestreInputs"></div>
+                                        </div>
+                                        <div id="oitavoSemestre">
+                                            <div class="semestreHeaderObrigatorias">
+                                                8º Semestre
+                                            </div>
+                                            <div class="semestreInputs" id="oitavoSemestreInputs"></div>
+                                        </div>
+                                        <div id="nonoSemestre">
+                                            <div class="semestreHeaderObrigatorias">
+                                                9º Semestre
+                                            </div>
+                                            <div class="semestreInputs" id="nonoSemestreInputs"></div>
+                                        </div>
                                     </div>
-                                    <div class="semestreInputs" id="primeiroSemestreInputs"></div>
-                                </div>
-                                <div id="segundoSemestre">
-                                    <div class="semestreHeaderObrigatorias">
-                                        2º Semestre
-                                    </div>
-                                    <div class="semestreInputs" id="segundoSemestreInputs"></div>
-                                </div>
-                                <div id="terceiroSemestre">
-                                    <div class="semestreHeaderObrigatorias">
-                                        3º Semestre
-                                    </div>
-                                    <div class="semestreInputs" id="terceiroSemestreInputs"></div>
-                                </div>
-                                <div id="quartoSemestre">
-                                    <div class="semestreHeaderObrigatorias">
-                                        4º Semestre
-                                    </div>
-                                    <div class="semestreInputs" id="quartoSemestreInputs"></div>
-                                </div>
-                                <div id="quintoSemestre">
-                                    <div class="semestreHeaderObrigatorias">
-                                        5º Semestre
-                                    </div>
-                                    <div class="semestreInputs" id="quintoSemestreInputs"></div>
-                                </div>
-                                <div id="sextoSemestre">
-                                    <div class="semestreHeaderObrigatorias">
-                                        6º Semestre
-                                    </div>
-                                    <div class="semestreInputs" id="sextoSemestreInputs"></div>
-                                </div>
-                                <div id="setimoSemestre">
-                                    <div class="semestreHeaderObrigatorias">
-                                        7º Semestre
-                                    </div>
-                                    <div class="semestreInputs" id="setimoSemestreInputs"></div>
-                                </div>
-                                <div id="oitavoSemestre">
-                                    <div class="semestreHeaderObrigatorias">
-                                        8º Semestre
-                                    </div>
-                                    <div class="semestreInputs" id="oitavoSemestreInputs"></div>
-                                </div>
-                                <div id="nonoSemestre">
-                                    <div class="semestreHeaderObrigatorias">
-                                        9º Semestre
-                                    </div>
-                                    <div class="semestreInputs" id="nonoSemestreInputs"></div>
                                 </div>
                             </div>
+                            <div class="tabPanel">
+                                <div class="semestresEletivas">
+                                    <div id="quartoSemestreEletivas">
+                                        <div class="semestreHeaderEletivas">
+                                            4º Semestre
+                                        </div>
+                                        <div class="semestreInputs" id="quartoSemestreInputsEletivas"></div>
+                                    </div>
+                                    <div id="quintoSemestreEletivas">
+                                        <div class="semestreHeaderEletivas">
+                                            5º Semestre
+                                        </div>
+                                        <div class="semestreInputs" id="quintoSemestreInputsEletivas"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabPanel">
+                                <select name="optativasSelect" id="optativasSelect" class="form-control form-control-lg" multiple style="display:none">
+                                    <div id="optativasInputs">
+                                        <option value="1">Teste 1</option>
+                                        <option value="2">Teste 2</option>
+                                        <option value="3">Teste 3</option>
+                                        <option value="4">Teste 4</option>
+                                        <option value="5">Teste 5</option>
+                                    </div>
+                                </select>
+                            </div>
+                            <div class="tabPanel">Tab 4</div>
                         </div>
                     </div>
-                    <div class="tabPanel">
-                        <div class="semestresEletivas">
-                            <div id="quartoSemestreEletivas">
-                                <div class="semestreHeaderEletivas">
-                                    4º Semestre
-                                </div>
-                                <div class="semestreInputs" id="quartoSemestreInputsEletivas"></div>
-                            </div>
-                            <div id="quintoSemestreEletivas">
-                                <div class="semestreHeaderEletivas">
-                                    5º Semestre
-                                </div>
-                                <div class="semestreInputs" id="quintoSemestreInputsEletivas"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tabPanel">
-                        <select name="optativasSelect" id="optativasSelect" class="form-control form-control-lg" multiple style="display:none">
-                            <div id="optativasInputs">
-                                <option value="1">Teste 1</option>
-                                <option value="2">Teste 2</option>
-                                <option value="3">Teste 3</option>
-                                <option value="4">Teste 4</option>
-                                <option value="5">Teste 5</option>
-                            </div>
-                        </select>
-                    </div>
-                    <div class="tabPanel">Tab 4</div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </main>
 

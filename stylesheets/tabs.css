@@ -3,7 +3,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 :root{
@@ -43,19 +42,6 @@ main .container-main {
     background: #FAF5F2;
 }
 
-.panel .panel-heading {
-    background: #FFBFC3;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: verdana
-}
-
-.panel .panel-heading:hover {
-    background: grey;
-    color: white;
-}
-
 .title{
     font-family: var(--font-title);
     color: #dc2d5e;
@@ -68,6 +54,7 @@ main .container-main {
     width: 92%;
     height: 350px;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .tabContainer .buttonContainer{
@@ -94,6 +81,10 @@ main .container-main {
 
 .tabContainer .buttonContainer button:hover{
     background-color: #d7d4d4;
+}
+
+.tabContainer .contentContainer {
+    box-sizing: border-box;
 }
 
 .tabContainer .tabPanel{
@@ -129,16 +120,6 @@ main .container-main {
 #oitavoSemestre { grid-area: 3 / 2 / 4 / 3; display: block; text-align: left;}
 #nonoSemestre { grid-area: 3 / 3 / 4 / 4; display: none; text-align: left;}
 
-.semestresEletivas {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 32px;
-    grid-row-gap: 20px;
-}
-
-#quartoSemestreEletivas { grid-area: 1 / 1 / 2 / 2; display: block; text-align: left;}
-#quintoSemestreEletivas { grid-area: 1 / 2 / 2 / 3; display: block; text-align: left;}
-
 .semestreHeaderObrigatorias {
     text-align: center;
     width: 80%;
@@ -150,6 +131,21 @@ main .container-main {
     box-shadow: 4px 4px black
 }
 
+.semestresObrigatorias .semestreInputs {
+    width: 80%;
+    margin: auto;
+}
+
+.semestresEletivas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 20px;
+}
+
+#quartoSemestreEletivas { grid-area: 1 / 1 / 2 / 2; display: block; text-align: left;}
+#quintoSemestreEletivas { grid-area: 1 / 2 / 2 / 3; display: block; text-align: left;}
+
 .semestreHeaderEletivas {
     text-align: center;
     width: 80%;
@@ -159,9 +155,4 @@ main .container-main {
     border: solid 2px black;
     border-radius: 16px;
     box-shadow: 4px 4px black
-}
-
-.semestresObrigatorias .semestreInputs {
-    width: 80%;
-    margin: auto;
 }
