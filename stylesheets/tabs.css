@@ -44,15 +44,25 @@ main .container-main {
     left: 0;
     right: 0;
     top: 90px;
-    bottom: 0;
+    bottom: -100%;
+}
+
+.description {
+    margin: 0 4% 0.5em 4%;
+    font-family: var(--font-text);
+    font-size: 1.3em;
 }
 
 .title{
     font-family: var(--font-title);
-    color: #dc2d5e;
-    margin-left: 4%;
-    margin-left: 4%;
+    color: #000000;
+    background: #FF9FD9;
     width: fit-content;
+    margin-bottom: 0.5em;
+    border: 2px solid black;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 4px 4px black;
+    padding: 0.5em 1em;
 }
 
 .tabContainer{
@@ -60,6 +70,7 @@ main .container-main {
     height: 350px;
     margin: auto;
     box-sizing: border-box;
+    bottom: 0px;
 }
 
 .tabContainer .buttonContainer{
@@ -133,12 +144,9 @@ main .container-main {
     background-color: #FFBFC3;
     border: solid 2px black;
     border-radius: 16px;
-    box-shadow: 4px 4px black
-}
-
-.semestresObrigatorias .semestreInputs {
-    width: 80%;
-    margin: auto;
+    box-shadow: 4px 4px black;
+    font-family: var(--font-title);
+    font-size: 20px;
 }
 
 .semestresEletivas {
@@ -159,7 +167,15 @@ main .container-main {
     background-color: #FFDCC3;
     border: solid 2px black;
     border-radius: 16px;
-    box-shadow: 4px 4px black
+    box-shadow: 4px 4px black;
+    font-family: var(--font-title);
+    font-size: 20px;
+}
+
+.semestreInputs {
+    width: 80%;
+    margin: auto;
+    font-family: var(--font-text);
 }
 
 #submitCheckboxes {
