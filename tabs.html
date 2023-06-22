@@ -33,64 +33,64 @@
             <form action="submit" method="post" id="tabbedInputs">
                 <div class="tabContainer">
                     <div class="buttonContainer">
-                        <button onclick="showPanel(0,'#F98585')" style="border-left: 2px solid black;" type="button">Obrigatórias</button>
-                        <button onclick="showPanel(1,'#FFBE99')" type="button">Eletivas</button>
-                        <button onclick="showPanel(2,'#91FBB5')" type="button">Optativas</button>
-                        <button onclick="showPanel(3,'#8BA4FF')" type="button">Atividades</button>
+                        <button onclick="showPanel(0,'#E5FEFF')" style="border-left: 2px solid black;" type="button" id="buttonFirst">Obrigatórias</button>
+                        <button onclick="showPanel(1,'#FFF9E5')" type="button" id="buttonSecond">Eletivas</button>
+                        <button onclick="showPanel(2,'#99FF99')" type="button" id="buttonThird">Optativas</button>
+                        <button onclick="showPanel(3,'#F199FF')" style="border-right: 2px solid black;" type="button" id="buttonFourth">Atividades</button>
                     </div>
                     <div class="contentContainer">
                         <div class="tabPanel">
                             <div>
                                 <div class="semestresObrigatorias">
-                                    <div id="primeiroSemestre">
+                                    <div id="primeiroSemestre" class="termContainer">
                                         <div class="semestreHeaderObrigatorias">
                                             1º Semestre
                                         </div>
                                         <div class="semestreInputs" id="primeiroSemestreInputs"></div>
                                     </div>
-                                    <div id="segundoSemestre">
+                                    <div id="segundoSemestre" class="termContainer">
                                         <div class="semestreHeaderObrigatorias">
                                             2º Semestre
                                         </div>
                                         <div class="semestreInputs" id="segundoSemestreInputs"></div>
                                     </div>
-                                    <div id="terceiroSemestre">
+                                    <div id="terceiroSemestre" class="termContainer">
                                         <div class="semestreHeaderObrigatorias">
                                             3º Semestre
                                         </div>
                                         <div class="semestreInputs" id="terceiroSemestreInputs"></div>
                                     </div>
-                                    <div id="quartoSemestre">
+                                    <div id="quartoSemestre" class="termContainer">
                                         <div class="semestreHeaderObrigatorias">
                                             4º Semestre
                                         </div>
                                         <div class="semestreInputs" id="quartoSemestreInputs"></div>
                                     </div>
-                                    <div id="quintoSemestre">
+                                    <div id="quintoSemestre" class="termContainer">
                                         <div class="semestreHeaderObrigatorias">
                                             5º Semestre
                                         </div>
                                         <div class="semestreInputs" id="quintoSemestreInputs"></div>
                                     </div>
-                                    <div id="sextoSemestre">
+                                    <div id="sextoSemestre" class="termContainer">
                                         <div class="semestreHeaderObrigatorias">
                                             6º Semestre
                                         </div>
                                         <div class="semestreInputs" id="sextoSemestreInputs"></div>
                                     </div>
-                                    <div id="setimoSemestre">
+                                    <div id="setimoSemestre" class="termContainer">
                                         <div class="semestreHeaderObrigatorias">
                                             7º Semestre
                                         </div>
                                         <div class="semestreInputs" id="setimoSemestreInputs"></div>
                                     </div>
-                                    <div id="oitavoSemestre">
+                                    <div id="oitavoSemestre" class="termContainer">
                                         <div class="semestreHeaderObrigatorias">
                                             8º Semestre
                                         </div>
                                         <div class="semestreInputs" id="oitavoSemestreInputs"></div>
                                     </div>
-                                    <div id="nonoSemestre">
+                                    <div id="nonoSemestre" class="termContainer">
                                         <div class="semestreHeaderObrigatorias">
                                             9º Semestre
                                         </div>
@@ -101,13 +101,13 @@
                         </div>
                         <div class="tabPanel">
                             <div class="semestresEletivas">
-                                <div id="quartoSemestreEletivas">
+                                <div id="quartoSemestreEletivas" class="termContainer">
                                     <div class="semestreHeaderEletivas">
                                         4º Semestre
                                     </div>
                                     <div class="semestreInputs" id="quartoSemestreInputsEletivas"></div>
                                 </div>
-                                <div id="quintoSemestreEletivas">
+                                <div id="quintoSemestreEletivas" class="termContainer">
                                     <div class="semestreHeaderEletivas">
                                         5º Semestre
                                     </div>

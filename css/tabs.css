@@ -87,16 +87,28 @@ main .container-main {
     border: none;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    outline:none;
+    outline: none;
     cursor: pointer;
     padding: 8px;
     font-family: var(--font-title);
     font-size: 20px;
-    background-color: #eee;
+    letter-spacing: -1.8px;
 }
 
-.tabContainer .buttonContainer button:hover{
-    background-color: #d7d4d4;
+.tabContainer .buttonContainer #buttonFirst{
+    background-color: #E5FEFF;
+}
+
+.tabContainer .buttonContainer #buttonSecond{
+    background-color: #FFF9E5;
+}
+
+.tabContainer .buttonContainer #buttonThird{
+    background-color: #99FF99;
+}
+
+.tabContainer .buttonContainer #buttonFourth{
+    background-color: #F199FF;
 }
 
 .tabContainer .contentContainer {
@@ -112,7 +124,7 @@ main .container-main {
     font-family: sans-serif;
     font-size: 1em;
     display: none;
-    padding: 1em;
+    padding: 2.5em 2em;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     box-shadow: 4px 4px black;
@@ -124,6 +136,12 @@ main .container-main {
     grid-template-rows: repeat(3);
     grid-column-gap: 32px;
     grid-row-gap: 20px;
+}
+
+.semestresObrigatorias .termContainer {
+    background: #E5FEFF;
+    box-shadow: 4px 4px black;
+    overflow: hidden;
 }
 
 #primeiroSemestre { grid-area: 1 / 1 / 2 / 2; display: block; text-align: left;}
@@ -138,13 +156,10 @@ main .container-main {
 
 .semestreHeaderObrigatorias {
     text-align: center;
-    width: 80%;
-    margin: 1.5em auto;
-    padding: 1em;
-    background-color: #FFBFC3;
-    border: solid 2px black;
-    border-radius: 16px;
-    box-shadow: 4px 4px black;
+    width: 100%;
+    padding: 0.5em;
+    background-color: #99FAFF;
+    border-bottom: black 2px solid;
     font-family: var(--font-title);
     font-size: 20px;
 }
@@ -154,6 +169,9 @@ main .container-main {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 32px;
     grid-row-gap: 20px;
+}
+
+.semestresEletivas .termContainer {
 }
 
 #quartoSemestreEletivas { grid-area: 1 / 1 / 2 / 2; display: block; text-align: left;}
@@ -172,9 +190,14 @@ main .container-main {
     font-size: 20px;
 }
 
+.termContainer {
+    border: black 2px solid;
+    border-radius: 16px;
+}
+
 .semestreInputs {
     width: 80%;
-    margin: auto;
+    margin: 1.5em auto;
     font-family: var(--font-text);
     font-size: 0.9em;
 }
