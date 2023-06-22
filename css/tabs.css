@@ -172,6 +172,9 @@ main .container-main {
 }
 
 .semestresEletivas .termContainer {
+    background: #FFF9E5;
+    box-shadow: 4px 4px black;
+    overflow: hidden;
 }
 
 #quartoSemestreEletivas { grid-area: 1 / 1 / 2 / 2; display: block; text-align: left;}
@@ -179,13 +182,10 @@ main .container-main {
 
 .semestreHeaderEletivas {
     text-align: center;
-    width: 80%;
-    margin: 1.5em auto;
-    padding: 1em;
+    width: 100%;
+    padding: 0.5em;
     background-color: #FFDCC3;
-    border: solid 2px black;
-    border-radius: 16px;
-    box-shadow: 4px 4px black;
+    border-bottom: black 2px solid;
     font-family: var(--font-title);
     font-size: 20px;
 }

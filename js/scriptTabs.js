@@ -14,7 +14,7 @@ function showPanel(panelIndex,colorCode) {
     tabPanels.forEach(function(node){
         node.style.display="none";
     });
-    tabPanels[panelIndex].style.display="flex";
+    tabPanels[panelIndex].style.display="block";
     tabPanels[panelIndex].style.backgroundColor=colorCode;
     tabPanels[panelIndex].style.borderBottom="solid 2px black";
     tabPanels[panelIndex].style.borderLeft="solid 2px black";
