@@ -14,30 +14,35 @@
     --font-header: 'Lexend', sans-serif;
 }
 
-header .container-header{
+header nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    padding: 25px 40px 120px 40px;
+    background: #FFFFFF;
+    padding: 1.5em 4%;
 }
 
-header .container-header img {
-    height: 40px;
-    width: 60px;
+header nav img {
+    height: 60px;
+    width: 90px;
 }
 
-header .container-header nav a{
-    padding-left: 53px;
+header nav div{
+    display: flex;
+}
+
+header nav div a{
     text-decoration: none;
-    color: black;
+    color: #000000;
     font-family: var(--font-header);
     font-size: 1em;
+    margin-left: 2rem;
 }
 
-header .container-header nav a:hover{
+header nav div a:hover{
     cursor: pointer;
+    color: inherit;
     text-decoration: underline;
 }
 

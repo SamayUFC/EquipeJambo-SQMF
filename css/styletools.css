@@ -5,7 +5,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 :root{
@@ -14,31 +13,36 @@
     --font-header: 'Lexend', sans-serif;
 }
 
-header .container-header{
+header nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    padding: 25px 4% 0px 4%;
+    background: #FFFFFF;
+    padding: 1.5em 4%;
 }
 
-header .container-header nav a{
-    padding-left: 53px;
-    text-decoration: none;
-    color: black;
-    font-family: var(--font-header);
-    font-size: 1em;
-}
-
-header .container-header nav a:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-header .container-header img {
+header nav img {
     height: 60px;
     width: 90px;
+}
+
+header nav div{
+    display: flex;
+}
+
+header nav div a{
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--font-header);
+    font-size: 1em;
+    margin-left: 2rem;
+}
+
+header nav div a:hover{
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
 }
 
 main .container-main1{

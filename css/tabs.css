@@ -9,32 +9,39 @@
     --font-title: 'Lexend Mega', sans-serif;
     --font-text: 'Nunito', sans-serif;
     --font-header: 'Lexend', sans-serif;
+
+    --standard-shadow: 4px 4px black;
 }
 
-header .container-header{
+header nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
-    padding: 25px 4%;
+    padding: 1.5em 4%;
 }
 
-header .container-header img {
-    height: 40px;
-    width: 60px;
+header nav img {
+    height: 60px;
+    width: 90px;
 }
 
-header .container-header nav a{
-    padding-left: 53px;
+header nav div{
+    display: flex;
+}
+
+header nav div a{
     text-decoration: none;
-    color: black;
+    color: #000000;
     font-family: var(--font-header);
     font-size: 1em;
+    margin-left: 2rem;
 }
 
-header .container-header nav a:hover{
+header nav div a:hover{
     cursor: pointer;
+    color: inherit;
     text-decoration: underline;
 }
 
@@ -43,7 +50,7 @@ main .container-main {
     position: absolute;
     left: 0;
     right: 0;
-    top: 90px;
+    top: 110px;
     bottom: -100%;
 }
 
@@ -61,7 +68,7 @@ main .container-main {
     margin-bottom: 0.5em;
     border: 2px solid black;
     border-radius: 0 0 16px 16px;
-    box-shadow: 4px 4px black;
+    box-shadow: var(--standard-shadow);
     padding: 0.5em 1em;
 }
 
@@ -77,7 +84,7 @@ main .container-main {
     height: 15%;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-    box-shadow: 4px 4px black;
+    box-shadow: var(--standard-shadow);
 }
 
 .tabContainer .buttonContainer button{
@@ -113,6 +120,7 @@ main .container-main {
 
 .tabContainer .contentContainer {
     box-sizing: border-box;
+    display: grid;
 }
 
 .tabContainer .tabPanel{
@@ -127,7 +135,7 @@ main .container-main {
     padding: 2.5em 2em;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
-    box-shadow: 4px 4px black;
+    box-shadow: var(--standard-shadow);
 }
 
 .semestresObrigatorias {
@@ -140,7 +148,7 @@ main .container-main {
 
 .semestresObrigatorias .termContainer {
     background: #E5FEFF;
-    box-shadow: 4px 4px black;
+    box-shadow: var(--standard-shadow);
     overflow: hidden;
 }
 
@@ -173,7 +181,7 @@ main .container-main {
 
 .semestresEletivas .termContainer {
     background: #FFF9E5;
-    box-shadow: 4px 4px black;
+    box-shadow: var(--standard-shadow);
     overflow: hidden;
 }
 
