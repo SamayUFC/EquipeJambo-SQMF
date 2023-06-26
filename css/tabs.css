@@ -19,7 +19,7 @@ header nav{
     justify-content: space-between;
     align-items: center;
     background: #FFFFFF;
-    padding: 1.5em 4%;
+    padding: 1em 4%;
 }
 
 header nav img {
@@ -111,11 +111,11 @@ main .container-main {
 }
 
 .tabContainer .buttonContainer #buttonThird{
-    background-color: #99FF99;
+    background-color: #E5FFE5;
 }
 
 .tabContainer .buttonContainer #buttonFourth{
-    background-color: #F199FF;
+    background-color: #FBE5FF;
 }
 
 .tabContainer .contentContainer {

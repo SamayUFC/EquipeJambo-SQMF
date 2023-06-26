@@ -48,6 +48,7 @@ header nav div a:hover{
 
 main {
     background-color: #FAF5F2;
+    color: #000000;
 }
 
 main .container-main .intro{
@@ -79,7 +80,7 @@ main .container-main .intro p{
     width: 65%;
 }
 
-main .container-main .intro button{
+main .container-main .intro .link-main{
     margin: 2rem 1.2rem;
     padding: 1rem 2rem;
     width: fit-content;
@@ -90,9 +91,17 @@ main .container-main .intro button{
     box-shadow: 4px 4px #000000;
     border-radius: 16px;
     border: none;
+    text-decoration: none;
+    color: #000000
 }
 
-main .container-main .features .features-titles{
+main .container-main .intro .link-main:hover{
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+}
+
+main .container-main .features .features-title{
     font-family: var(--font-title);
     padding: 1.5rem;
     text-align: center;
@@ -100,10 +109,62 @@ main .container-main .features .features-titles{
     margin: 12% auto 2%;
     background: #DDB2FF;
     border: 2px #000000 solid;
-    border-radius: 0 0 16px 16px;
+    border-radius: 16px;
     box-shadow: 4px 4px #000000;
 }
 
-main .container-main .features .card #card-calculator{
-    width: 51%;
+main .container-main .features .features-cards {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    padding: 0 4%;
+    grid-column-gap: 4%;
+}
+
+main .container-main .features .card, #card-calculator{
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 4px 4px #000000;
+    overflow: hidden;
+}
+
+main .container-main .features .card .img-calculator {
+    width: 100%;
+    height: 22rem;
+}
+
+main .container-main .features .card, #card-info{
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 4px 4px #000000;
+    overflow: hidden;
+    margin-bottom: 4%;
+}
+
+main .container-main .features .card .img-info {
+    width: 100%;
+    height: 11.6rem;
+}
+
+main .container-main .features .card .text-card {
+    padding: 1.5rem 1.5rem 1rem;
+}
+
+main .container-main .features .card h3 {
+    font-family: var(--font-title);
+}
+
+main .container-main .features .card p {
+    font-family: var(--font-text);
+}
+
+main .container-main .features .card a {
+    color: #000000;
+    text-decoration: none;
+}
+
+main .container-main .features .card a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
 }
