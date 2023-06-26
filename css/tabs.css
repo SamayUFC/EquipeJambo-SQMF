@@ -63,7 +63,7 @@ main .container-main {
 .title{
     font-family: var(--font-title);
     color: #000000;
-    background: #FF9FD9;
+    background: #DDB2FF;
     width: fit-content;
     margin-bottom: 0.5em;
     border: 2px solid black;
