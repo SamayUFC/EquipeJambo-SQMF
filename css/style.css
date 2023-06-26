@@ -5,6 +5,7 @@
 *{
     margin: 0;
     padding: 0;
+    /* border: black 1px solid; */
 }
 
 :root{
@@ -45,6 +46,10 @@ header nav div a:hover{
     text-decoration: underline;
 }
 
+main {
+    background-color: #FAF5F2;
+}
+
 main .container-main .intro{
     display: flex;
     flex-direction: column;
@@ -53,27 +58,52 @@ main .container-main .intro{
 
     text-align: left;
 
-    padding: 2rem 8% 2rem;
+    padding: 0.5rem 8%;
+
+    bottom: 0;
+
+    right: 0;
 }
 
 main .container-main .intro .title-main{
     font-family: var(--font-title);
     font-size: 10em;
     letter-spacing: -0.1em;
+    width: fit-content;
 }
 
 main .container-main .intro p{
-    font-family: var(--font-text);
+    font-family: var(--font-header);
     font-size: 1.5em;
-    padding: 0 1rem;
-    width: 60%;
+    padding: 0 1.2rem;
+    width: 65%;
 }
 
 main .container-main .intro button{
-    margin: 2rem 0.8rem;
-    padding: 1rem 1.5rem;
+    margin: 2rem 1.2rem;
+    padding: 1rem 2rem;
     width: fit-content;
     height: auto;
     font-family: var(--font-text);
-    font-size: 1.1em;
+    font-size: 1.2em;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px #000000;
+    border-radius: 16px;
+    border: none;
+}
+
+main .container-main .features .features-titles{
+    font-family: var(--font-title);
+    padding: 1.5rem;
+    text-align: center;
+    width: 92%;
+    margin: 12% auto 2%;
+    background: #DDB2FF;
+    border: 2px #000000 solid;
+    border-radius: 0 0 16px 16px;
+    box-shadow: 4px 4px #000000;
+}
+
+main .container-main .features .card #card-calculator{
+    width: 51%;
 }
