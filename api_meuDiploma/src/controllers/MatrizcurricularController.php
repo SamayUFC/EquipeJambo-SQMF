@@ -31,23 +31,18 @@ class MatrizcurricularController extends Controller {
 
                 $disciplinas = Disciplinas::select()->where($matriz2)->get();
 
-                
-
+        
                 foreach($disciplinas as $key1 => $value1){
-                   
 
                     $codigodisc = [
                         'DISC' => $value1['ID']
                     ];
-                    
-
                     
                     $prerequisito = Prerequisitos::select()->where($codigodisc)->get();
 
                     $requisitos = [];
                         foreach($prerequisito as $key2 => $value2){
                             
-
                             $idprereq = [
                                 'id' => $value2['REQUISITO']
                             ];
@@ -61,12 +56,8 @@ class MatrizcurricularController extends Controller {
                                 ];
                                 array_push($requisitos, $dadosRequi); 
                             }
-                            
-                            
                         }
                     
-                    
-
                     $disc1 = [
                         'id' => $value1['ID'],
                         'codigo' => $value1['CODIGO'],
@@ -79,12 +70,9 @@ class MatrizcurricularController extends Controller {
                     ];
 
                     array_push($disc, $disc1);
-
                 
                 }
 
-               
-                
                 $dados = [
                     'matriz' => $value['MATRIZ'],
                     'cargaHorariaTotal' => $value['CARGAHORARIATOTAL'],
@@ -99,5 +87,57 @@ class MatrizcurricularController extends Controller {
             echo json_encode($dados);
         }
 
+    }
+
+    public function insert(){
+
+        $matriz = filter_input(INPUT_POST, 'matriz');
+        $cargahorariatotal = filter_input(INPUT_POST, 'cargahorariatotal');
+        $cargaobrig = filter_input(INPUT_POST, 'cargaobrig');
+        $cargaoptativa = filter_input(INPUT_POST, 'cargaoptativa');
+        $cargaoptativalivre = filter_input(INPUT_POST, 'cargaoptativalivre');
+
+        Matrizcurricular::insert(
+            [
+                'matriz' => $matriz,
+                'cargahorariatotal' => $cargahorariatotal,
+                'cargaobrig' => $cargaobrig,
+                'cargaoptativa' => $cargaoptativa,
+                'cargaoptativalivre' => $cargaoptativalivre
+            ]
+        )->execute(); 
+
+
+    }
+
+    public function delete($matriz){
+        Matrizcurricular::delete()->where('matriz',$matriz['matriz'])->execute(); 
+    }
+
+    public function update($matriz){
+
+        $matriz2 = filter_input(INPUT_POST, 'matriz');
+        $cargahorariatotal = filter_input(INPUT_POST, 'cargahorariatotal');
+        $cargaobrig = filter_input(INPUT_POST, 'cargaobrig');
+        $cargaoptativa = filter_input(INPUT_POST, 'cargaoptativa');
+        $cargaoptativalivre = filter_input(INPUT_POST, 'cargaoptativalivre');
+
+        $data = [
+            'matriz' => $matriz2,
+            'cargahorariatotal' => $cargahorariatotal,
+            'cargaobrig' => $cargaobrig,
+            'cargaoptativa' => $cargaoptativa,
+            'cargaoptativalivre' => $cargaoptativalivre
+        ];
+
+        Matrizcurricular::update()->set(
+            [
+                'matriz' => $data['matriz'],
+                'cargahorariatotal' => $data['cargahorariatotal'],
+                'cargaobrig' => $data['cargaobrig'],
+                'cargaoptativa' => $data['cargaoptativa'],
+                'cargaoptativalivre' => $data['cargaoptativalivre']
+            ]
+            )->where('matriz', $matriz['matriz'])->execute();
     }
 }
