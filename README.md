@@ -41,3 +41,11 @@ class Usuario extends Model {
 
 }
 ```
+
+## Desenvolvedores:
+- Gabriel Albuquerque
+- Bruno Alejandro
+- Bruno Nobrega
+- Mariana Batista
+- Rebeca
+- Samay Pessoa
