@@ -1,7 +1,7 @@
 # Jambo
 
 ## Projeto Formei?
-Este projeto é desenvolvidos por estudantes da Universidade Federal do Ceará, com o intuito de ajudar os discentes do curso Sistemas e Mídias Digitais a calcular o seu progresso no curso. 
+Este projeto é desenvolvido por estudantes da Universidade Federal do Ceará, para a disciplina de Projeto Integrado I, com o intuito de ajudar os discentes do curso de Sistemas e Mídias Digitais a calcular o seu progresso no curso. 
 
 ## Instalação
 
@@ -45,7 +45,7 @@ class Usuario extends Model {
 ## Desenvolvedores:
 - Gabriel Albuquerque
 - Bruno Alejandro
-- Bruno Nobrega
+- Bruno Nóbrega
 - Mariana Batista
-- Rebeca
+- Rebeca Costa
 - Samay Pessoa
