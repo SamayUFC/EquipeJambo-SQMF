@@ -141,7 +141,7 @@
 }
 
 .hidden{
-    display:none
+    display: block;
 }
 
 .mult-select-tag .shadow{
