@@ -16,7 +16,7 @@ function getAll() {
 
         .then(data => {
             console.log(data);
-            data.disciplinas.forEach((course)=> {
+            data.disciplinas.forEach((course, index) => {
                 if (course.natureza == "OBRIGATÓRIA") {
                     if (course.semestre == 1) {
                         outFirst[0].innerHTML = outFirst[0].innerHTML + 
@@ -120,6 +120,10 @@ function getAll() {
                         </div>`;
                     }
                 }
+                if (course.natureza == "OPTATIVA") {
+                    outOptionals[0].innerHTML = outOptionals[0].innerHTML + 
+                    `<option value="${index+1}">${course.componente}</option>`;
+                }
             });
         })              
     } catch(e) {
@@ -140,6 +144,7 @@ let outEighth = document.querySelectorAll("#oitavoSemestreInputs");
 let outNinth = document.querySelectorAll("#nonoSemestreInputs");
 let outElectivesFourth = document.querySelectorAll('#quartoSemestreInputsEletivas');
 let outElectivesFifth = document.querySelectorAll('#quintoSemestreInputsEletivas');
+let outOptionals = document.querySelectorAll('#optativasSelect');
 
 
 const submitCheckboxes = document.querySelector('#submitCheckboxes');

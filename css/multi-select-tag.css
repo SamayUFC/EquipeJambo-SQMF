@@ -63,7 +63,6 @@
     padding:0;
     background:0 0;
     background-image:none;
-    /* -webkit-appearance:none; */
     text-transform:none;
     margin:0
 }
@@ -141,7 +140,7 @@
 }
 
 .hidden{
-    display: block;
+    display: none ;
 }
 
 .mult-select-tag .shadow{
