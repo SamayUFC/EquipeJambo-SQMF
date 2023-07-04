@@ -4,7 +4,6 @@ function url(params) {
     }else{
         return "http://localhost/EquipeJambo-SQMF/api_meuDiploma/public/"; 
     }
- 
 }
 
 
@@ -121,8 +120,12 @@ function getAll() {
                     }
                 }
                 if (course.natureza == "OPTATIVA") {
-                    outOptionals[0].innerHTML = outOptionals[0].innerHTML + 
-                    `<option value="${index+1}">${course.componente}</option>`;
+                    let newOption = document.createElement("option");
+                    let correctedIndex = index + 1;
+                    newOption.value = `${correctedIndex}`;
+                    newOption.text = `${course.componente}`;
+                    outOptionals.appendChild(newOption);
+                    console.log(outOptionals.value);
                 }
             });
         })              
@@ -133,18 +136,18 @@ function getAll() {
 
 getAll();
 
-let outFirst = document.querySelectorAll("#primeiroSemestreInputs");
-let outSecond = document.querySelectorAll("#segundoSemestreInputs");
-let outThird = document.querySelectorAll("#terceiroSemestreInputs");
-let outFourth = document.querySelectorAll("#quartoSemestreInputs");
-let outFifth = document.querySelectorAll("#quintoSemestreInputs");
-let outSixth = document.querySelectorAll("#sextoSemestreInputs");
-let outSeventh = document.querySelectorAll("#setimoSemestreInputs");
-let outEighth = document.querySelectorAll("#oitavoSemestreInputs");
-let outNinth = document.querySelectorAll("#nonoSemestreInputs");
-let outElectivesFourth = document.querySelectorAll('#quartoSemestreInputsEletivas');
-let outElectivesFifth = document.querySelectorAll('#quintoSemestreInputsEletivas');
-let outOptionals = document.querySelectorAll('#optativasSelect');
+const outFirst = document.querySelectorAll("#primeiroSemestreInputs");
+const outSecond = document.querySelectorAll("#segundoSemestreInputs");
+const outThird = document.querySelectorAll("#terceiroSemestreInputs");
+const outFourth = document.querySelectorAll("#quartoSemestreInputs");
+const outFifth = document.querySelectorAll("#quintoSemestreInputs");
+const outSixth = document.querySelectorAll("#sextoSemestreInputs");
+const outSeventh = document.querySelectorAll("#setimoSemestreInputs");
+const outEighth = document.querySelectorAll("#oitavoSemestreInputs");
+const outNinth = document.querySelectorAll("#nonoSemestreInputs");
+const outElectivesFourth = document.querySelectorAll('#quartoSemestreInputsEletivas');
+const outElectivesFifth = document.querySelectorAll('#quintoSemestreInputsEletivas');
+const outOptionals = document.getElementById("optativasInputs");
 
 
 const submitCheckboxes = document.querySelector('#submitCheckboxes');

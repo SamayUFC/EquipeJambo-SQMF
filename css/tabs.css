@@ -210,6 +210,10 @@ main .container-main {
     font-size: 0.9em;
 }
 
+#optativasSelect {
+    box-shadow: var(--standard-shadow);
+}
+
 #submitCheckboxes {
     width: 100px;
     text-align: center;
