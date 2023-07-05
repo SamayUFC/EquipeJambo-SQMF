@@ -209,7 +209,8 @@ const MultiSelectDropdown = (params) => {
         'min-width': `${config.minWidth}`,
         'max-width': `${config.maxWidth}`,
         cursor: 'pointer',
-        'color': 'var(--color-text--normal)'
+        'color': 'var(--color-text--normal)',
+        'box-shadow': '4px 4px #000000'
       },
       'span.optext, span.placeholder': {
         display: 'inline-flex',
@@ -243,14 +244,15 @@ const MultiSelectDropdown = (params) => {
       '.multiselect-dropdown-list-wrapper': {
         'z-index': 100,
         'border-radius': 'var(--border-radius--base)',
-        border: 'solid 1px var(--color-border)',
+        border: 'solid 2px var(--color-border)',
         display: 'none',
         margin: '-1px',
         position: 'absolute',
         top: 0,
         left: 0,
         right: 0,
-        background: 'var(--color-background)'
+        background: 'var(--color-background)',
+        'box-shadow': '5px 4px #000000'
       },
       '.multiselect-dropdown-search': {
         padding: '1rem 1.5rem',

@@ -148,20 +148,4 @@ const outElectivesFourth = document.querySelectorAll('#quartoSemestreInputsEleti
 const outElectivesFifth = document.querySelectorAll('#quintoSemestreInputsEletivas');
 const outOptionals = document.getElementById("optionalsSelect");
 
-const submitCheckboxes = document.querySelector('#submitCheckboxes');
-submitCheckboxes.addEventListener('click', (event) => {
-    let selectedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked')
-    let horasValores = 0;
-    selectedCheckboxes.forEach((checkbox) => {
-        horasValores += Number(checkbox.value);
-    });
-    alert(Number(horasValores));
-    
-    let names = [];
-    selectedCheckboxes.forEach((checkbox) => {
-        names.push(" " + checkbox.name);
-    });
-    alert(names);
-});
-
 
