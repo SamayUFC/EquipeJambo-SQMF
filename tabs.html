@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Calculadora</title>
     <link rel="stylesheet" type="text/css" href="css/tabs.css">
-    <link rel="stylesheet" type="text/css" href="css/multi-select-tag.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/multi-select-tag.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css\multi-select-dropdown.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/css/bootstrap-select.min.css" rel="stylesheet"> -->
     
 </head>
 
@@ -33,8 +33,13 @@
                 <p>
                     Marque as disciplinas que está cursando e/ou já concluiu e as atividades que entregou para conferir pendências e calcular sua formatura!
                 </p>
+                <div class="hours">
+                    <h2>
+                        <span name="total">0</span>h/2880h
+                    </h2>
+                </div>
             </div>
-            <form action="submit" method="post" id="tabbedInputs">
+            <form action="report.html" method="post" id="tabbedInputs">
                 <div class="tabContainer">
                     <div class="buttonContainer">
                         <button onclick="showPanel(0,'#E5FEFF')" style="border-left: 2px solid black;" type="button" id="buttonFirst">Obrigatórias</button>
@@ -120,21 +125,26 @@
                             </div>
                         </div>
                         <div class="tabPanel">
-                            Insira as optativas: (texto a desenvolver)
-                            <!-- <div class="container mt-5">
-                                <select id="optativasSelect" class="selectpicker" multiple aria-label="Default select example" data-live-search="true">
-                                </select>
-                            </div> -->
-                            <select name="optativasSelect" id="optativasSelect" class="form-control form-control-lg" multiple style="display:none">
-                                <div id="optativasInputs">
-                                    <option value="1">Teste 1</option>
-                                    <option value="2">Teste 2</option>
-                                    <option value="3">Teste 3</option>
-                                    <option value="4">Teste 4</option>
-                                    <option value="5">Teste 5</option>
-                                    <option value="6">ALOOOOO</option>
+                            <div class="wrapper">
+                                <div class="wrapper">
+                                  <div class="container" id="dropdownSelected" style="display: none;">
+                                  </div>
+                                    <div class="container">
+                                        <select multiple search='true' id="optionalsSelect">
+                                        </select>
+                                    </div>
                                 </div>
-                            </select>
+                            </div>
+                            <!-- <select name="optativasSelect" id="optativasSelect" class="form-control form-control-lg" multiple style="display:none">
+                                <option value="1">Teste 1</option>
+                                <option value="2">Teste 2</option>
+                                <option value="3">Teste 3</option>
+                                <option value="4">Teste 4</option>
+                                <option value="5">Teste 5</option>
+                                <option value="6">ALOOOOO</option>
+                                <div id="optativasInputs">
+                                </div>
+                            </select> -->
                         </div>
                         <div class="tabPanel">Tab 4</div>
                     </div>
@@ -146,9 +156,21 @@
 
     <script src="js/scriptTabs.js"></script>
     <script src="js/scriptDisciplinas.js"></script>
-    <script src="js/multi-select-tag.js"></script>
+    <script src="js/multi-select-dropdown.js"></script>
     <script>
-        new MultiSelectTag('optativasSelect');
+        let selecteds = [];
+
+        console.log(outOptionals.options);
+        outOptionals.addEventListener("change",getSelecteds,outOptionals.options);
+
+        function getSelecteds(options){
+            options.forEach((option)=>{
+                if(option.selected){
+                    selecteds.push(option.value);
+                }
+            });
+            console.log(selecteds);
+        }
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

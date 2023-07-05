@@ -72,6 +72,18 @@ main .container-main {
     padding: 0.5em 1em;
 }
 
+.hours h2 {
+    font-family: var(--font-title);
+    font-size: 20px;
+    color: #000000;
+    background: #DDB2FF;
+    border: 2px solid black;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em;
+}
+
 .tabContainer{
     width: 92%;
     height: 350px;
@@ -103,19 +115,19 @@ main .container-main {
 }
 
 .tabContainer .buttonContainer #buttonFirst{
-    background-color: #E5FEFF;
+    background-color: #99FAFF;
 }
 
 .tabContainer .buttonContainer #buttonSecond{
-    background-color: #FFF9E5;
+    background-color: #FFE799;
 }
 
 .tabContainer .buttonContainer #buttonThird{
-    background-color: #E5FFE5;
+    background-color: #99FF99;
 }
 
 .tabContainer .buttonContainer #buttonFourth{
-    background-color: #FBE5FF;
+    background-color: #F199FF;
 }
 
 .tabContainer .contentContainer {
@@ -140,7 +152,7 @@ main .container-main {
 
 .semestresObrigatorias {
     display: grid;
-    grid-template-columns: repeat(3);
+    grid-template-columns: repeat(3, 31.5%);
     grid-template-rows: repeat(3);
     grid-column-gap: 32px;
     grid-row-gap: 20px;
