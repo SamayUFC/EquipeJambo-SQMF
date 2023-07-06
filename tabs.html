@@ -135,16 +135,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <select name="optativasSelect" id="optativasSelect" class="form-control form-control-lg" multiple style="display:none">
-                                <option value="1">Teste 1</option>
-                                <option value="2">Teste 2</option>
-                                <option value="3">Teste 3</option>
-                                <option value="4">Teste 4</option>
-                                <option value="5">Teste 5</option>
-                                <option value="6">ALOOOOO</option>
-                                <div id="optativasInputs">
-                                </div>
-                            </select> -->
                         </div>
                         <div class="tabPanel">Tab 4</div>
                     </div>
@@ -157,25 +147,32 @@
     <script src="js/scriptTabs.js"></script>
     <script src="js/scriptDisciplinas.js"></script>
     <script src="js/multi-select-dropdown.js"></script>
-    <script>
-        // let selecteds = [];
-
-        // console.log(outOptionals.options);
-        // outOptionals.addEventListener("change",getSelecteds,outOptionals.options);
-
-        // function getSelecteds(options){
-        //     options.forEach((option)=>{
-        //         if(option.selected){
-        //             selecteds.push(option.value);
-        //         }
-        //     });
-        //     console.log(selecteds);
-        // }
-    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
+    <script>
+        window.addEventListener('load', ()=>{
+            MultiSelectDropdown(window.MultiSelectDropdownOptions);
+        });
+    </script>
+    <script>
+        let selecteds = [];
+
+        let optionsArray = multiSelectContainer.querySelectorAll('div');
+        console.log(optionsArray);
+        outOptionals.addEventListener("selectionchange", getSelecteds, outOptionals.options);
+            
+        function getSelecteds(options){
+            options.forEach((option)=>{
+                if(option.selected){
+                    selecteds.push(option.value);
+                }
+            });
+            console.log(selecteds);
+        }
+    </script>
+
 
 </body>
 </html>

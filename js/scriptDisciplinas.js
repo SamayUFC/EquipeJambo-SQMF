@@ -147,5 +147,6 @@ const outNinth = document.querySelectorAll("#nonoSemestreInputs");
 const outElectivesFourth = document.querySelectorAll('#quartoSemestreInputsEletivas');
 const outElectivesFifth = document.querySelectorAll('#quintoSemestreInputsEletivas');
 const outOptionals = document.getElementById("optionalsSelect");
+const multiSelectContainer = document.getElementById("multiselect-dropdown-list");
 
 

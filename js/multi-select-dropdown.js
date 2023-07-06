@@ -44,7 +44,7 @@ const MultiSelectDropdown = (params) => {
     multiSelect.style.display = 'none';
     multiSelect.parentNode.insertBefore(div, multiSelect.nextSibling);
     let dropdownListWrapper = newElement('div', { class: 'multiselect-dropdown-list-wrapper' });
-    let dropdownList = newElement('div', { class: 'multiselect-dropdown-list' });
+    let dropdownList = newElement('div', { class: 'multiselect-dropdown-list', id: 'multiselect-dropdown-list' });
     let search = newElement('input', {
       class: ['multiselect-dropdown-search'].concat([config.searchInput?.class ?? 'form-control']),
       style: {
@@ -327,10 +327,6 @@ const MultiSelectDropdown = (params) => {
 
   config.useStyles && createStyles();
 };
-
-window.addEventListener("DOMContentLoaded", ()=>{
-  MultiSelectDropdown(window.MultiSelectDropdownOptions);
-});
 
 // window.addEventListener('load', () => {
 //   MultiSelectDropdown(window.MultiSelectDropdownOptions);
