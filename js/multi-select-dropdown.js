@@ -108,15 +108,11 @@ const MultiSelectDropdown = (params) => {
       div.dropdownListWrapper = dropdownListWrapper;
 
       div.refresh = () => {
-        // For demo purposes, remove
-        let tempSelectedList = document.getElementById('dropdownSelected');
+        //Variável que define o total de horas optativas selecionadas
+        let selectedTotalValue = Number(0);
 
         div.querySelectorAll('span.optext, span.placeholder').forEach((placeholder) => div.removeChild(placeholder));
         let selected = Array.from(multiSelect.selectedOptions);
-        // For demo purposes, remove
-        tempSelectedList
-          .querySelectorAll('span')
-          .forEach((span, index) => index !== 0 && tempSelectedList.removeChild(span));
 
         selected.map((option) => {
           let span = newElement('span', {
@@ -139,8 +135,8 @@ const MultiSelectDropdown = (params) => {
             );
           }
           div.appendChild(span);
-          // For demo purposes, remove
-          tempSelectedList.appendChild(newElement('span', { text: option.text }));
+          // Aqui é onde soma os valores de cada os valores de cada opção marcada
+          selectedTotalValue += Number(option.value);
         });
         if (multiSelect.selectedOptions?.length === 0) {
           div.appendChild(
@@ -149,9 +145,14 @@ const MultiSelectDropdown = (params) => {
               text: multiSelect.attributes?.placeholder?.value ?? config.placeholder
             })
           );
-          // For demo purposes, remove
-          tempSelectedList.appendChild(newElement('span', { text: 'n/a' }));
+          //Se nenhuma opção for escolhida, o valor de horas é 0
+          selectedTotalValue = Number(0);
         }
+        //Total de horas optativas exibidas na barra superior e, para testes, no console, para verificar se
+        //valor está sendo inserido no input placeholder que será usado para levar as informações do form
+        displayOptionalHours.innerHTML = selectedTotalValue;
+        inputPlaceholder.value = selectedTotalValue;
+        console.log(inputPlaceholder.value);
       };
       div.refresh();
     };

@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <title>Calculadora</title>
     <link rel="stylesheet" type="text/css" href="css/tabs.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/multi-select-tag.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" href="css\multi-select-dropdown.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap -->
@@ -35,7 +33,7 @@
                 </p>
                 <div class="hours">
                     <h2>
-                        <span name="total">0</span>h/2880h
+                        <span id="totalHoursDisplay"></span>h/2880h
                     </h2>
                 </div>
             </div>
@@ -131,14 +129,16 @@
                                   </div>
                                     <div class="container">
                                         <select multiple search='true' id="optionalsSelect">
+                                            //Preenchimento dinâmico de options a partir de disciplinas trazidas pela API
                                         </select>
+                                        <input type="text" style="display: none;" id="inputPlaceholder">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tabPanel">Tab 4</div>
+                        <div class="tabPanel">Essa opção está em desenvolvimento!</div>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="submitCheckboxes">Calcular</button>
+                    <input type="submit" value="Calcular" class="btn btn-primary" id="submitCheckboxes">
                 </div>
             </form>
         </div>
@@ -152,14 +152,24 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0-beta2/js/bootstrap-select.min.js"></script>
     <script>
+        const displayOptionalHours = document.getElementById("totalHoursDisplay");
+        const inputPlaceholder = document.getElementById("inputPlaceholder");
+
         window.addEventListener('load', ()=>{
             MultiSelectDropdown(window.MultiSelectDropdownOptions);
+            // multiSelectContainer.addEventListener('change', event => {
+            //   if (event.target.class === 'checkbox') {
+            //     const checked = document.querySelectorAll('input[type="checkbox"]:checked');
+            //     selecteds += checked.values;
+            //     console.log(selecteds);
+            //   }
+            // })
         });
     </script>
-    <script>
+    <!-- <script>
         let selecteds = [];
 
-        let optionsArray = multiSelectContainer.querySelectorAll('div');
+        let optionsArray = multiSelectContainer.getElementsByTagName('div');
         console.log(optionsArray);
         outOptionals.addEventListener("selectionchange", getSelecteds, outOptionals.options);
             
@@ -171,7 +181,7 @@
             });
             console.log(selecteds);
         }
-    </script>
+    </script> -->
 
 
 </body>

@@ -103,7 +103,8 @@ function getAll() {
                     if (course.semestre == 4) {
                         outElectivesFourth[0].innerHTML = outElectivesFourth[0].innerHTML + 
                         `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
-                            <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
+                            <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} 
+                            style="box-shadow: 2px 2px black"/>
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
                             </span>
@@ -147,6 +148,5 @@ const outNinth = document.querySelectorAll("#nonoSemestreInputs");
 const outElectivesFourth = document.querySelectorAll('#quartoSemestreInputsEletivas');
 const outElectivesFifth = document.querySelectorAll('#quintoSemestreInputsEletivas');
 const outOptionals = document.getElementById("optionalsSelect");
-const multiSelectContainer = document.getElementById("multiselect-dropdown-list");
 
 
