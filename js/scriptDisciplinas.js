@@ -19,7 +19,7 @@ function getAll() {
                 if (course.natureza == "OBRIGATÓRIA") {
                     if (course.semestre == 1) {
                         outFirst[0].innerHTML = outFirst[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
+                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                             <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
@@ -28,7 +28,7 @@ function getAll() {
                     }
                     if (course.semestre == 2) {
                         outSecond[0].innerHTML = outSecond[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
+                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                             <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
@@ -37,7 +37,7 @@ function getAll() {
                     }
                     if (course.semestre == 3) {
                         outThird[0].innerHTML = outThird[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
+                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                             <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
@@ -46,7 +46,7 @@ function getAll() {
                     }
                     if (course.semestre == 4) {
                         outFourth[0].innerHTML = outFourth[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
+                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                             <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
@@ -55,7 +55,7 @@ function getAll() {
                     }
                     if (course.semestre == 5) {
                         outFifth[0].innerHTML = outFifth[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
+                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                             <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
@@ -64,7 +64,7 @@ function getAll() {
                     }
                     if (course.semestre == 6) {
                         outSixth[0].innerHTML = outSixth[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
+                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                             <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
@@ -73,7 +73,7 @@ function getAll() {
                     }
                     if (course.semestre == 7) {
                         outSeventh[0].innerHTML = outSeventh[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
+                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                             <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
@@ -82,7 +82,7 @@ function getAll() {
                     }
                     if (course.semestre == 8) {
                         outEighth[0].innerHTML = outEighth[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
+                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                             <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
@@ -91,7 +91,7 @@ function getAll() {
                     }
                     if (course.semestre == 9) {
                         outNinth[0].innerHTML = outNinth[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
+                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                             <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
@@ -102,9 +102,8 @@ function getAll() {
                 if (course.natureza == "ELETIVA") {
                     if (course.semestre == 4) {
                         outElectivesFourth[0].innerHTML = outElectivesFourth[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
-                            <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} 
-                            style="box-shadow: 2px 2px black"/>
+                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
+                            <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
                             </span>
@@ -112,7 +111,7 @@ function getAll() {
                     }
                     if (course.semestre == 5) {
                         outElectivesFifth[0].innerHTML = outElectivesFifth[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%;">
+                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                             <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
                             <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
                                <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>

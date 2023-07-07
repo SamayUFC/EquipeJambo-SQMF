@@ -109,7 +109,7 @@ const MultiSelectDropdown = (params) => {
 
       div.refresh = () => {
         //Variável que define o total de horas optativas selecionadas
-        let selectedTotalValue = Number(0);
+        let selectedOptionalTotalValue = Number(0);
 
         div.querySelectorAll('span.optext, span.placeholder').forEach((placeholder) => div.removeChild(placeholder));
         let selected = Array.from(multiSelect.selectedOptions);
@@ -136,7 +136,7 @@ const MultiSelectDropdown = (params) => {
           }
           div.appendChild(span);
           // Aqui é onde soma os valores de cada os valores de cada opção marcada
-          selectedTotalValue += Number(option.value);
+          selectedOptionalTotalValue += Number(option.value);
         });
         if (multiSelect.selectedOptions?.length === 0) {
           div.appendChild(
@@ -146,12 +146,12 @@ const MultiSelectDropdown = (params) => {
             })
           );
           //Se nenhuma opção for escolhida, o valor de horas é 0
-          selectedTotalValue = Number(0);
+          selectedOptionalTotalValue = Number(0);
         }
         //Total de horas optativas exibidas na barra superior e, para testes, no console, para verificar se
         //valor está sendo inserido no input placeholder que será usado para levar as informações do form
-        displayOptionalHours.innerHTML = selectedTotalValue;
-        inputPlaceholder.value = selectedTotalValue;
+        displayOptionalHours.innerHTML = selectedOptionalTotalValue;
+        inputPlaceholder.value = selectedOptionalTotalValue;
         console.log(inputPlaceholder.value);
       };
       div.refresh();
