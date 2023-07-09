@@ -218,9 +218,10 @@ main .container-main .team .team-peers .team-pictures .team-single {
     display: flex;
 }
 
-main .container-main .team .team-peers .team-pictures .team-single img {
+main .container-main .team .team-peers .team-pictures .team-single .team-single-picture {
     height: 100px;
     width: 100px;
+    object-fit: cover;
     border: solid #000000 2px;
     box-shadow: 4px 4px #000000;
     border-radius: 50%;
