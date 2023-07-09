@@ -323,9 +323,27 @@ main .container-main {
 }
 
 #submitCheckboxes {
-    width: 100px;
-    text-align: center;
-    margin: 2em auto;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    width: 15%;
+    height: auto;
+    font-family: var(--font-text);
+    font-size: 1.2em;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px #000000;
+    border-radius: 16px;
+    border: none;
+    text-decoration: none;
+    color: #000000;
+    margin: 2rem auto;
+}
+
+#submitCheckboxes:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
 }
