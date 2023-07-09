@@ -147,3 +147,7 @@ main .container-main {
     display: flex;
     justify-content: space-between;
 }
+
+.container-main .details .detailsCards .cardContainer .cardText #secondCardText {
+    font-family: var(--font-header)
+}
