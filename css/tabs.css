@@ -248,6 +248,7 @@ main .container-main {
 .containerActivities .descriptionActivities p {
     font-family: var(--font-text);
     font-size: 18px;
+    letter-spacing: 0px;
 }
 
 .containerActivities .mainActivities {
