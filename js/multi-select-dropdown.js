@@ -109,7 +109,7 @@ const MultiSelectDropdown = (params) => {
 
       div.refresh = () => {
         //Variável que define o total de horas optativas selecionadas
-        let selectedOptionalTotalValue = Number(0);
+        selectedOptionalTotalValue = Number(0);
 
         div.querySelectorAll('span.optext, span.placeholder').forEach((placeholder) => div.removeChild(placeholder));
         let selected = Array.from(multiSelect.selectedOptions);
@@ -150,9 +150,27 @@ const MultiSelectDropdown = (params) => {
         }
         //Total de horas optativas exibidas na barra superior e, para testes, no console, para verificar se
         //valor está sendo inserido no input placeholder que será usado para levar as informações do form
-        displayOptionalHours.innerHTML = selectedOptionalTotalValue;
+        displayHours.innerHTML = selectedOptionalTotalValue;
         inputPlaceholder.value = selectedOptionalTotalValue;
-        console.log(inputPlaceholder.value);
+        document.querySelectorAll(".form-check-input")
+        .forEach(input=> {
+          input.addEventListener("change",calculateWithCheckboxes)
+        });
+
+        function calculateWithCheckboxes(){
+          selectedDisciplinesTotalValues = 0;
+          document.querySelectorAll(".form-check-input")
+          .forEach(input=> {
+            if (input.checked) {
+              selectedDisciplinesTotalValues += Number.parseInt(input.getAttribute("value"));
+            }
+          });
+        }
+        if (selectedDisciplinesTotalValues+selectedOptionalTotalValue > 0) {
+          displayHours.innerHTML = selectedDisciplinesTotalValues+selectedOptionalTotalValue;
+        } else {
+          displayHours.innerHTML = "0";
+        }
       };
       div.refresh();
     };
@@ -202,8 +220,6 @@ const MultiSelectDropdown = (params) => {
         'border-radius': 'var(--border-radius--base)',
         border: 'solid 2px var(--color-border)',
         background: 'var(--color-background)',
-        'background-image':
-          "url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e\")",
         'background-repeat': 'no-repeat',
         'background-position': 'right 6px center',
         'background-size': '16px 12px',

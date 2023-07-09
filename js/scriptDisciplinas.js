@@ -81,13 +81,15 @@ function getAll() {
                         </div>`;
                     }
                     if (course.semestre == 8) {
-                        outEighth[0].innerHTML = outEighth[0].innerHTML + 
-                        `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
-                            <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
-                            <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
-                               <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
-                            </span>
-                        </div>`;
+                        if (course.componente != ("ATIVIDADES COMPLEMENTARES")) {
+                            outEighth[0].innerHTML = outEighth[0].innerHTML + 
+                            `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
+                                <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
+                                <span style="display: inline; position: relative; left: 1.5rem; top: 2px" class="checkbox_label">
+                                   <label for=${course.codigo}>${course.componente} (${course.cargahoraria}h)</label>
+                                </span>
+                            </div>`;
+                        }
                     }
                     if (course.semestre == 9) {
                         outNinth[0].innerHTML = outNinth[0].innerHTML + 
