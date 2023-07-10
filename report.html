@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Progresso</title>
+    <link rel="stylesheet" type="text/css" href="css/report.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="assets/jk-placeholder-image.jpg" alt="Logo do website. Temporariamente, uma imagem placeholder genérica, de fundo cinza, com um ícone de quadro ou janela mostrando uma montanha e um sol simplificados">
+            </a>
+            
+            <div>
+                <a href="index.html">Home</a>
+                <a href="calculator.html">Calculadora</a>
+                <a href="info-teste.html">Infográfico</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-main">
+            <div class="description">
+                <h1 class="title">Relatório de Progresso</h1>
+                <p>
+                    De acordo com o que foi marcado, estas são suas pendências:
+                </p>
+            </div>
+            <div class="details">
+                <div class="detailsText">
+                    <div class="prediction">
+                        <span id="textPrediction">Você se formará em: </span><span id="numberPrediction">XXXX.X</span>
+                    </div>
+                    <div style="margin: 2em 0 2em;">
+                        <p>Você tem 17 componentes pendentes!</p>
+                        <p>De acordo com o que foi marcado, você ainda precisa concluir:</p>
+                        <p>13 disciplinas obrigatórias,<br>
+                            1 disciplina eletiva e<br>
+                            16 disciplinas optativas.</p>
+                    </div>
+                    <div style="font-size: 0.8em;">
+                        * O resultado é calculado a partir das disciplinas marcadas durante o processo de input. Os criadores isentam-se de qualquer erro causado por reprovação, trancamento, matrícula indeferida, etc. Se persistirem as dúvidas, consulte a Secretaria do curso.
+                    </div>
+                </div>
+                <div class="detailsCards">
+                    <div id="firstCard" class="cardContainer">
+                        <div class="cardHeader">
+                            Carga horária pendente
+                        </div>
+                        <div class="cardText" id="firstCardText">
+                            <div>
+                                <span>Disciplinas obrigatórias</span>
+                                <span class="hoursCard">576h/1344h</span>
+                            </div>
+                            <div>
+                                <span>Disciplinas eletivas</span>
+                                <span class="hoursCard">384h/448h</span>
+                            </div>
+                            <div>
+                                <span>Disciplinas optativas</span>
+                                <span class="hoursCard">192h/1216h</span>
+                            </div>
+                            <div>
+                                <span>Atividade - TCC</span>
+                                <span class="hoursCard">0h/128h</span>
+                            </div>
+                            <div>
+                                <span>Horas Complementares</span>
+                                <span class="hoursCard">70h/192h</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="secondCard" class="cardContainer">
+                        <div class="cardHeader">
+                            Obrigatórias e Eletivas Pendentes
+                        </div>
+                        <div class="cardText" id="secondCardText">
+                            <div>
+                                <span>3º Semestre</span>
+                            </div>
+                            <div>
+                                <span>Design De Interfaces Gráficas</span>
+                                <span>64 horas</span>
+                            </div>
+                            <div>
+                                <span>Interação Humano-Computador I</span>
+                                <span>64 horas</span>
+                            </div>
+                            <hr>
+                            <div>
+                                <span>4º Semestre</span>
+                            </div>
+                            <div>
+                                <span>Metodologia de Pesquisa Científica</span>
+                                <span>64 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

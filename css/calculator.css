@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Lexend+Mega:wght@800&family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-title: 'Lexend Mega', sans-serif;
+    --font-text: 'Nunito', sans-serif;
+    --font-header: 'Lexend', sans-serif;
+
+    --standard-shadow: 4px 4px black;
+}
+
+body {
+    background: #FAF5F2;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 1em 4%;
+}
+
+header nav img {
+    height: 60px;
+    width: 90px;
+}
+
+header nav div{
+    display: flex;
+}
+
+header nav div a{
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--font-header);
+    font-size: 1em;
+    margin-left: 2rem;
+}
+
+header nav div a:hover{
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+}
+
+main .container-main {
+    text-align: center;
+    background: #FAF5F2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    bottom: 0;
+}
+
+.description {
+    margin: 0 4% 0.5em 4%;
+    font-family: var(--font-text);
+    font-size: 1.3em;
+}
+
+.title{
+    font-family: var(--font-title);
+    color: #000000;
+    background: #DDB2FF;
+    width: fit-content;
+    margin-bottom: 0.5em;
+    border: 2px solid black;
+    border-radius: 0 0 16px 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em 1em;
+}
+
+.mainText {
+    height: auto;
+}
+
+.containerInputTerm {
+    width: 40%;
+    background-color: #FFF9E5;
+    border-radius: 16px;
+    margin: auto;
+    box-shadow: var(--standard-shadow);
+    padding: 1.5em 2em;
+    text-align: center;
+    margin-bottom: 2rem;
+    border: #000000 2px solid;
+}
+
+.containerInputTerm h3 {
+    font-family: var(--font-title);
+}
+
+.containerInputTerm p {
+    font-family: var(--font-header);
+}
+
+.containerInputTerm #instructions {
+    text-align: left;
+    font-family: var(--font-text);
+    margin: 1rem 0 1rem
+}
+
+.containerInputTerm input {
+    height: 3em;
+    border-radius: 16px;
+    text-align: center;
+    font-family: var(--font-text);
+    border: #000000 solid 2px;
+    box-shadow: var(--standard-shadow);
+    margin-top: 1rem;
+    width: 20%;
+}
+
+.container-main .linkCalculator {
+    text-align: center;
+    margin: 5rem auto;
+    padding: 0.5rem 1.5rem;
+    width: fit-content;
+    height: auto;
+    font-family: var(--font-text);
+    font-size: 1.2em;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px #000000;
+    border-radius: 16px;
+    border: none;
+    text-decoration: none;
+    color: #000000
+}
+
+.container-main .linkCalculator:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+}

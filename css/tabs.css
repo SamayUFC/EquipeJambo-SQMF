@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Lexend+Mega:wght@800&family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-title: 'Lexend Mega', sans-serif;
+    --font-text: 'Nunito', sans-serif;
+    --font-header: 'Lexend', sans-serif;
+
+    --standard-shadow: 4px 4px black;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 1em 4%;
+}
+
+header nav img {
+    height: 60px;
+    width: 90px;
+}
+
+header nav div{
+    display: flex;
+}
+
+header nav div a{
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--font-header);
+    font-size: 1em;
+    margin-left: 2rem;
+}
+
+header nav div a:hover{
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+}
+
+main .container-main {
+    background: #FAF5F2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    bottom: -100%;
+}
+
+.description {
+    margin: 0 4% 0.5em 4%;
+    font-family: var(--font-text);
+    font-size: 1.3em;
+    color: #000000;
+}
+
+.title{
+    font-family: var(--font-title);
+    color: #000000;
+    background: #DDB2FF;
+    width: fit-content;
+    margin-bottom: 0.5em;
+    border: 2px solid black;
+    border-radius: 0 0 16px 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em 1em;
+}
+
+.hours h2 {
+    font-family: var(--font-title);
+    font-size: 20px;
+    color: #000000;
+    background: #DDB2FF;
+    border: 2px solid black;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em;
+}
+
+.tabContainer{
+    width: 92%;
+    height: 350px;
+    margin: auto;
+    box-sizing: border-box;
+    bottom: 0px;
+}
+
+.tabContainer .buttonContainer{
+    height: 15%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-shadow: var(--standard-shadow);
+}
+
+.tabContainer .buttonContainer button{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border: none;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    font-family: var(--font-title);
+    font-size: 20px;
+    letter-spacing: -1.8px;
+}
+
+.tabContainer .buttonContainer #buttonFirst{
+    background-color: #99FAFF;
+}
+
+.tabContainer .buttonContainer #buttonSecond{
+    background-color: #FFE799;
+}
+
+.tabContainer .buttonContainer #buttonThird{
+    background-color: #99FF99;
+}
+
+.tabContainer .buttonContainer #buttonFourth{
+    background-color: #F199FF;
+}
+
+.tabContainer .contentContainer {
+    box-sizing: border-box;
+    display: grid;
+}
+
+.tabContainer .tabPanel{
+    height: auto;
+    background-color: gray;
+    color: #000000;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1em;
+    display: none;
+    padding: 2.5em 2em;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: var(--standard-shadow);
+}
+
+.semestresObrigatorias {
+    display: grid;
+    grid-template-columns: repeat(3, 31.5%);
+    grid-template-rows: repeat(3);
+    grid-column-gap: 32px;
+    grid-row-gap: 20px;
+}
+
+.semestresObrigatorias .termContainer {
+    background: #E5FEFF;
+    box-shadow: var(--standard-shadow);
+    overflow: hidden;
+}
+
+#primeiroSemestre { grid-area: 1 / 1 / 2 / 2; display: block; text-align: left;}
+#segundoSemestre { grid-area: 1 / 2 / 2 / 3; display: block; text-align: left;}
+#terceiroSemestre { grid-area: 1 / 3 / 2 / 4; display: block; text-align: left;}
+#quartoSemestre { grid-area: 2 / 1 / 3 / 2; display: block; text-align: left;}
+#quintoSemestre { grid-area: 2 / 2 / 3 / 3; display: block; text-align: left;}
+#sextoSemestre { grid-area: 2 / 3 / 3 / 4; display: block; text-align: left;}
+#setimoSemestre { grid-area: 3 / 1 / 4 / 2; display: block; text-align: left;}
+#oitavoSemestre { grid-area: 3 / 2 / 4 / 3; display: block; text-align: left;}
+#nonoSemestre { grid-area: 3 / 3 / 4 / 4; display: none; text-align: left;}
+
+.semestreHeaderObrigatorias {
+    text-align: center;
+    width: 100%;
+    padding: 0.5em;
+    background-color: #99FAFF;
+    border-bottom: black 2px solid;
+    font-family: var(--font-title);
+    font-size: 20px;
+}
+
+.semestresEletivas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 20px;
+}
+
+.semestresEletivas .termContainer {
+    background: #FFF9E5;
+    box-shadow: var(--standard-shadow);
+    overflow: hidden;
+}
+
+#quartoSemestreEletivas { grid-area: 1 / 1 / 2 / 2; display: block; text-align: left;}
+#quintoSemestreEletivas { grid-area: 1 / 2 / 2 / 3; display: block; text-align: left;}
+
+.semestreHeaderEletivas {
+    text-align: center;
+    width: 100%;
+    padding: 0.5em;
+    background-color: #FFDCC3;
+    border-bottom: black 2px solid;
+    font-family: var(--font-title);
+    font-size: 20px;
+}
+
+.termContainer {
+    border: black 2px solid;
+    border-radius: 16px;
+}
+
+.semestreInputs {
+    width: 80%;
+    margin: 1.5em auto;
+    font-size: 0.9em;
+}
+
+.semestreInputs label {
+    font-family: var(--font-text);
+}
+
+#optativasSelect {
+    box-shadow: var(--standard-shadow);
+}
+
+.containerActivities {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    border: #000000 solid 2px;
+    box-shadow: var(--standard-shadow);
+    text-align: left;
+    padding: 2.5%;
+}
+
+.containerActivities .descriptionActivities h3 {
+    font-family: var(--font-title);
+    font-size: 20px;
+    letter-spacing: -1.8px;
+}
+
+.containerActivities .descriptionActivities p {
+    font-family: var(--font-text);
+    font-size: 18px;
+    letter-spacing: 0px;
+}
+
+.containerActivities .mainActivities {
+    display: grid;
+    grid-template-columns: 50% 30%;
+    column-gap: 20%;
+}
+
+.containerActivities .mainActivities .activitiesInputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerActivities .mainActivities h3, p {
+    font-family: var(--font-title);
+    font-size: 20px;
+    letter-spacing: -1.8px;
+}
+
+.containerActivities .mainActivities .activitiesInputs div {
+    display: flex;
+    flex-direction: row;
+}
+
+.containerActivities .mainActivities .activitiesInputs p {
+    margin-top: 2rem;
+}
+
+.containerActivities .mainActivities .activitiesInputs input{
+    font-family: var(--font-text);
+    font-size: 16px;
+    width: 70%;
+    height: 3em;
+    border-radius: 16px;
+    border: #000000 2px solid;
+    padding: 1em;
+    margin-right: 1rem;
+    box-shadow: var(--standard-shadow);
+}
+
+/* .containerActivities .mainActivities .activitiesInputs button {
+    text-align: center;
+    justify-content: center;
+    height: 3em;
+    width: 3em;
+    border: #000000 2px solid;
+    background-color: #FFFFFF;
+    box-shadow: var(--standard-shadow);
+} */
+
+.containerActivities .mainActivities .totalActivities {
+    margin-top: 2rem;
+}
+
+.containerActivities .mainActivities .totalActivities div {
+    font-family: var(--font-title);
+    font-size: 24px;
+    color: #000000;
+    background: #DDB2FF;
+    border: 2px solid black;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--standard-shadow);
+    padding: 1em;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#submitCheckboxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    width: 15%;
+    height: auto;
+    font-family: var(--font-text);
+    font-size: 1.2em;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px #000000;
+    border-radius: 16px;
+    border: none;
+    text-decoration: none;
+    color: #000000;
+    margin: 2rem auto;
+}
+
+#submitCheckboxes:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+}

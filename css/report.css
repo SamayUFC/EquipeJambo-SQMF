@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Lexend+Mega:wght@800&family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --font-title: 'Lexend Mega', sans-serif;
+    --font-text: 'Nunito', sans-serif;
+    --font-header: 'Lexend', sans-serif;
+
+    --standard-shadow: 4px 4px black;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 1em 4%;
+}
+
+header nav img {
+    height: 60px;
+    width: 90px;
+}
+
+header nav div{
+    display: flex;
+}
+
+header nav div a{
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--font-header);
+    font-size: 1em;
+    margin-left: 2rem;
+}
+
+header nav div a:hover{
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+}
+
+main .container-main {
+    background: #FAF5F2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+    bottom: -100%;
+}
+
+.description {
+    margin: 0 4% 0.5em 4%;
+    font-family: var(--font-text);
+    font-size: 1.3em;
+}
+
+.title{
+    font-family: var(--font-title);
+    color: #000000;
+    background: #DDB2FF;
+    width: fit-content;
+    margin-bottom: 0.5em;
+    border: 2px solid black;
+    border-radius: 0 0 16px 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em 1em;
+}
+
+.container-main .details {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    column-gap: 20px;
+    padding: 0 4%;
+}
+
+.container-main .details p {
+    font-family: var(--font-text);
+    font-size: 1.2em;
+}
+
+.container-main .details .prediction{
+    color: #000000;
+    background: #DDB2FF;
+    width: fit-content;
+    margin-bottom: 0.5em;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em 1em;
+}
+
+.container-main .details .prediction #textPrediction{
+    font-family: var(--font-header);
+    font-size: 1.3em;
+}
+
+.container-main .details .prediction #numberPrediction{
+    font-family: var(--font-title);
+    font-size: 1.6em;
+}
+
+.container-main .details .detailsCards .cardContainer {
+    background: #FFFFFF;
+    box-shadow: var(--standard-shadow);
+    overflow: hidden;
+    border: #000000 2px solid;
+    border-radius: 16px;
+}
+
+.container-main .details .detailsCards .cardContainer .cardHeader {
+    text-align: center;
+    width: 100%;
+    padding: 0.5em;
+    border-bottom: black 2px solid;
+    font-family: var(--font-title);
+    font-size: 20px;
+    color: #000000;
+}
+
+.container-main .details .detailsCards #firstCard {
+    margin-bottom: 2em;
+}
+
+.container-main .details .detailsCards #firstCard .cardHeader{
+    background-color: #8EFAFF;
+}
+
+.container-main .details .detailsCards #secondCard .cardHeader{
+    background-color: #FFE799;
+}
+
+.container-main .details .detailsCards .cardContainer .cardText {
+    color: #000000;
+    width: 100%;
+    padding: 1em;
+    font-family: var(--font-title);
+    font-size: 16px;
+}
+
+.container-main .details .detailsCards .cardContainer .cardText div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-main .details .detailsCards .cardContainer .cardText #secondCardText {
+    font-family: var(--font-header)
+}
