@@ -306,6 +306,7 @@ const MultiSelectDropdown = (params) => {
         },
       '.multiselect-dropdown-list div': {
         display: 'flex',
+        'text-align': 'left',
         'align-items': 'center',
         'justify-content': 'flex-start',
         'column-gap': '6px',
@@ -345,6 +346,6 @@ const MultiSelectDropdown = (params) => {
   config.useStyles && createStyles();
 };
 
-// window.addEventListener('load', () => {
-//   MultiSelectDropdown(window.MultiSelectDropdownOptions);
-// });
+window.onload = () => {
+  MultiSelectDropdown(window.MultiSelectDropdownOptions);
+};
