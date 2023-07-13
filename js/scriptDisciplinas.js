@@ -81,7 +81,7 @@ function getAll() {
                         </div>`;
                     }
                     if (course.semestre == 8) {
-                        if (course.componente != ("ATIVIDADES COMPLEMENTARES")) {
+                        if (course.componente != ("ATIVIDADES COMPLEMENTARES" || "TRABALHO DE CONCLUSÃO DE CURSO")) {
                             outEighth[0].innerHTML = outEighth[0].innerHTML + 
                             `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                                 <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />

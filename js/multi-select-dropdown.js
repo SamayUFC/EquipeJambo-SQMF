@@ -154,7 +154,7 @@ const MultiSelectDropdown = (params) => {
         inputPlaceholder.value = selectedOptionalTotalValue;
         document.querySelectorAll(".form-check-input")
         .forEach(input=> {
-          input.addEventListener("change",calculateWithCheckboxes)
+          input.addEventListener("click",calculateWithCheckboxes)
         });
 
         function calculateWithCheckboxes(){
