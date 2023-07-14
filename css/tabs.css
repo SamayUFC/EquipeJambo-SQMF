@@ -151,6 +151,14 @@ main .container-main {
     box-shadow: var(--standard-shadow);
 }
 
+.tabContainer .tabPanel input[type=checkbox]:hover {
+    cursor: pointer;
+}
+
+.tabContainer .tabPanel label:hover {
+    cursor: pointer;
+}
+
 .semestresObrigatorias {
     display: grid;
     grid-template-columns: repeat(3, 31.5%);
