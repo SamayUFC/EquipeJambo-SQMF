@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relatório de Progresso</title>
-    <link rel="stylesheet" type="text/css" href="css/report.css">
+    <link rel="stylesheet" type="text/css" href="../css/report.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/logo.svg">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body>
+<body onload="init()">
     <header>
         <nav>
-            <a href="index.html">
-                <img src="assets/jk-placeholder-image.jpg" alt="Logo do website. Temporariamente, uma imagem placeholder genérica, de fundo cinza, com um ícone de quadro ou janela mostrando uma montanha e um sol simplificados">
+            <a href="../index.html">
+                <img src="../assets/logo.svg" alt="Logo do website. Temporariamente, uma imagem placeholder genérica, de fundo cinza, com um ícone de quadro ou janela mostrando uma montanha e um sol simplificados">
             </a>
             
             <div>
-                <a href="index.html">Home</a>
-                <a href="calculator.html">Calculadora</a>
+                <a href="../index.html">Home</a>
+                <a href="../pages/calculator.html">Calculadora</a>
                 <a href="#">Infográfico</a>
             </div>
         </nav>
@@ -56,15 +57,15 @@
                         <div class="cardText" id="firstCardText">
                             <div>
                                 <span>Disciplinas obrigatórias</span>
-                                <span class="hoursCard">576h/1344h</span>
+                                <span class="hoursCard"><span id="displayMandatory">0</span>h/1344h</span>
                             </div>
                             <div>
                                 <span>Disciplinas eletivas</span>
-                                <span class="hoursCard">384h/448h</span>
+                                <span class="hoursCard"><span id="displayElective">0</span>h/448h</span>
                             </div>
                             <div>
                                 <span>Disciplinas optativas</span>
-                                <span class="hoursCard">192h/1216h</span>
+                                <span class="hoursCard"><span id="displayOptional">0</span>h/1216h</span>
                             </div>
                             <div>
                                 <span>Atividade - TCC</span>
@@ -72,7 +73,7 @@
                             </div>
                             <div>
                                 <span>Horas Complementares</span>
-                                <span class="hoursCard">70h/192h</span>
+                                <span class="hoursCard"><span id="displayActivity">0</span>h/192h</span>
                             </div>
                         </div>
                     </div>
@@ -106,5 +107,27 @@
             </div>
         </div>
     </main>
+
+    <script>
+        function init() {
+            let selectedMandatoryTotalValue = localStorage.getItem("selectedMandatoryTotalValue");
+            let selectedElectiveTotalValue = localStorage.getItem("selectedElectiveTotalValue");
+            let selectedOptionalTotalValue = localStorage.getItem("selectedOptionalTotalValue");
+            let totalActivities = localStorage.getItem("totalActivities");
+
+            if (selectedMandatoryTotalValue > 0) {
+                document.getElementById("displayMandatory").innerHTML = Number(selectedMandatoryTotalValue);
+            }
+            if (selectedElectiveTotalValue > 0) {
+                document.getElementById("displayElective").innerHTML = Number(selectedElectiveTotalValue);
+            }
+            if (selectedOptionalTotalValue > 0) {
+                document.getElementById("displayOptional").innerHTML = Number(selectedOptionalTotalValue);
+            }
+            if (totalActivities > 0) {
+                document.getElementById("displayActivity").innerHTML = Number(totalActivities);
+            }
+        }
+    </script>
 </body>
 </html>
