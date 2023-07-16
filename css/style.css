@@ -163,6 +163,7 @@ main .container-main .features .card, #card-info{
 main .container-main .features .card .img-info {
     width: 100%;
     height: 22.5rem;
+    object-fit: cover;
 }
 
 main .container-main .features .card .text-card {
