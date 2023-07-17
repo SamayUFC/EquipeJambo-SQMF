@@ -55,6 +55,24 @@ class Usuario extends Model {
 |----------|----------|----------|
 | Escolher matriz curricular considerada. | Não implementado |  |
 | Selecionar disciplinas obrigatórias cursadas.   | Implementado   | tabs.html, tabs.css, multi-select-dropdown.js, scriptDisciplinas |
-| Item 3   | Item C   | Valor Z  |
-| Item 4   | Item D   | Valor W  |
-| Item 5   | Item E   | Valor V  |
+| Selecionar disciplinas eletivas cursadas.   | Implementado | Valor Z  |
+| Selecionar disciplinas optativas cursadas.  | Implementado   | Valor W  |
+| Informar horas complementares realizadas.   | Implementado   | Valor V  |
+| Exibir disciplinas obrigatórias e eletivas que faltam para conclusão do curso.    | Em andamento   | Valor V  |
+| Exibir horas complementares restantes necessárias para conclusão do curso.    | Implementado   | Valor V  |
+| Exportar dados (disciplinas e horas complementares restantes) exibidos pela calculadora.    | Não implementado   | Valor V  |
+| Exibir infográfico interativo-descritivo.    | Implementado   | Valor V  |
+| Exibir e explicar o que são as trilhas e como funcionam.    | Implementado   | Valor V  |
+| Exibir e explicar o que são as horas complementares.   | Implementado   | Valor V  |
+| Exibir e explicar o que são as disciplinas obrigatórias e eletivas.    | Implementado   | Valor V  |
+| Disponibilizar acesso aos dados da matriz curricular    | Implementado   | Valor V  |
+| Disponibilizar acesso aos dados das disciplinas    | Implementado   | Valor V  |
+| Alterar registro na tabela de matriz curriculares    | Implementado   | Valor V  |
+| Excluir registro da tabela de matriz curriculares    | Implementado   | Valor V  |
+| Integrar sistema ao banco     | Implementado   | Valor V  |
+| Incluir registro na tabela de disciplinas    | Implementado   | Valor V  |
+| Alterar registro na tabela de disciplinas    | Implementado   | Valor V  |
+| Excluir registro da tabela de disciplinas     | Implementado   | Valor V  |
+| Incluir registro na tabela de requisitos    | Implementado   | Valor V  |
+| Excluir registro da tabela de requisitos    | Implementado   | Valor V  |
+
