@@ -43,12 +43,12 @@ class Usuario extends Model {
 ```
 
 ## Desenvolvedores:
-- Gabriel Albuquerque
-- Bruno Alejandro
-- Bruno Nóbrega
-- Mariana Batista
-- Rebeca Costa
-- Samay Pessoa
+- Bruno Alejandro (design e front-end)
+- Bruno Nóbrega (front-end)
+- Gabriel Albuquerque (gestão)
+- Mariana Batista (design)
+- Rebeca Costa (design e ilustração)
+- Samay Pessoa (back-end)
 
 ## Requisitos funcionais
 | Requisitos | Status | Código |
