@@ -54,17 +54,17 @@ class Usuario extends Model {
 | Requisitos | Status | Código |
 |----------|----------|----------|
 | Escolher matriz curricular considerada. | Não implementado |  |
-| Selecionar disciplinas obrigatórias cursadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptDisciplinas.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptDisciplinas.js), [multi-select-dropdown.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/multi-select-dropdown.js) |
-| Selecionar disciplinas eletivas cursadas. | Implementado | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptDisciplinas.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptDisciplinas.js), [multi-select-dropdown.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/multi-select-dropdown.js)  |
-| Selecionar disciplinas optativas cursadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptDisciplinas.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptDisciplinas.js), [multi-select-dropdown.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/multi-select-dropdown.js)  |
-| Informar horas complementares realizadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptActivities.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptActivities.js)  |
-| Exibir disciplinas obrigatórias e eletivas que faltam para conclusão do curso. | Em andamento   | [report.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/report.html)  |
-| Exibir horas complementares restantes necessárias para conclusão do curso. | Implementado   | [report.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/report.html)  |
+| Selecionar disciplinas obrigatórias cursadas. | Implementado   | [tabs.html](pages/tabs.html), [scriptDisciplinas.js](js/scriptDisciplinas.js), [multi-select-dropdown.js](js/multi-select-dropdown.js) |
+| Selecionar disciplinas eletivas cursadas. | Implementado | [tabs.html](pages/tabs.html), [scriptDisciplinas.js](js/scriptDisciplinas.js), [multi-select-dropdown.js](js/multi-select-dropdown.js)  |
+| Selecionar disciplinas optativas cursadas. | Implementado   | [tabs.html](pages/tabs.html), [scriptDisciplinas.js](js/scriptDisciplinas.js), [multi-select-dropdown.js](js/multi-select-dropdown.js)  |
+| Informar horas complementares realizadas. | Implementado   | [tabs.html](pages/tabs.html), [scriptActivities.js](js/scriptActivities.js)  |
+| Exibir disciplinas obrigatórias e eletivas que faltam para conclusão do curso. | Em andamento   | [report.html](pages/report.html)  |
+| Exibir horas complementares restantes necessárias para conclusão do curso. | Implementado   | [report.html](pages/report.html)  |
 | Exportar dados (disciplinas e horas complementares restantes) exibidos pela calculadora. | Não implementado   |  |
-| Exibir infográfico interativo-descritivo. | Implementado   | [info.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/info.html), [grade-curricular.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/grade-curricular.html), [trilhas.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/trilhas.html), [horas-complementares.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/horas-complementares.html)  |
-| Exibir e explicar o que são as trilhas e como funcionam.  | Implementado   | [trilhas.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/trilhas.html) |
-| Exibir e explicar o que são as horas complementares. | Implementado   | [horas-complementares.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/horas-complementares.html) |
-| Exibir e explicar o que são as disciplinas obrigatórias e eletivas. | Implementado   | [grade-curricular.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/grade-curricular.html) |
+| Exibir infográfico interativo-descritivo. | Implementado   | [info.html](pages/info.html), [grade-curricular.html](pages/grade-curricular.html), [trilhas.html](pages/trilhas.html), [horas-complementares.html](pages/horas-complementares.html)  |
+| Exibir e explicar o que são as trilhas e como funcionam.  | Implementado   | [trilhas.html](pages/trilhas.html) |
+| Exibir e explicar o que são as horas complementares. | Implementado   | [horas-complementares.html](pages/horas-complementares.html) |
+| Exibir e explicar o que são as disciplinas obrigatórias e eletivas. | Implementado   | [grade-curricular.html](pages/grade-curricular.html) |
 | Disponibilizar acesso aos dados da matriz curricular  | Implementado   | [MatrizcurricularController.php get( )](api_meuDiploma/src/controllers/MatrizcurricularController.php)  | 
 | Disponibilizar acesso aos dados das disciplinas | Implementado   | [DisciplinaController.php get( )](api_meuDiploma/src/controllers/DisciplinaController.php) |
 | Alterar registro na tabela de matriz curriculares | Implementado   | [MatrizcurricularController.php update( )](api_meuDiploma/src/controllers/MatrizcurricularController.php) |
