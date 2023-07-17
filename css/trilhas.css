@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Lexend+Mega:wght@800&family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: black 1px solid; */
+}
+
+:root{
+    --corheader: #da5555;
+    --font-header: 'Lexend', sans-serif;
+    --font-title: 'Lexend Mega', sans-serif;
+    --font-text: 'Nunito', sans-serif;
+
+    --standard-shadow: 5px 5px black;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 1em 4%;
+}
+
+header nav img {
+    height: 60px;
+    width: 90px;
+}
+
+header nav div{
+    display: flex;
+}
+
+header nav div a{
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--font-header);
+    font-size: 1em;
+    margin-left: 2rem;
+}
+
+header nav div a:hover{
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+}
+
+body{
+    background-color: #faf5f2;
+}
+
+/*CABEÇALHO DA MAIN*/
+main #container-main{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+}
+
+main #description{
+    margin: 0 4% 0.5em 4%;
+    font-family: var(--font-text);
+    font-size: 1.3em;
+}
+
+main #description .title{
+    font-family: var(--font-title);
+    color: #000000;
+    background: #DDB2FF;
+    width: fit-content;
+    margin-bottom: 0.5em;
+    border: 2px solid black;
+    border-radius: 0 0 16px 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em 1em;
+}
+
+main #description p{
+    width: 40%;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+/*CORPO DO SITE*/
+main .cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+
+    margin: 1% 4% 1% 4%;
+}
+
+/*CARD 1*/
+main .card1{
+    background-color: #FFFEE1;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: var(--standard-shadow);
+
+    margin-bottom: 5%;
+}
+
+main .card1 .title_card1{
+    border-radius: 15px 15px 0px 0px;
+    background-color: #FFE799;
+    box-shadow: 0px 5px black;
+    font-family: var(--font-title);
+    padding: 1%;
+}
+
+main .card1 p{
+    padding: 3%;
+    font-family: var(--font-text);
+}
+
+main .card1 h2{
+    text-align: center;
+    font-family: var(--font-title);
+}
+
+main .card1 ul{
+    column-count: 2;
+    column-gap: 11%;
+    margin: 1%;
+    padding-left: 8%;
+}
+main .card1 ul li{
+    padding: 1.2%;
+    font-family: var(--font-text);
+}
+
+/*CARD 2*/
+main .card2{
+    background-color: #FBE5FF;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: var(--standard-shadow);
+    box-shadow: 0px 5px black;
+
+    margin-bottom: 5%;
+}
+
+main .card2 .title_card2{
+    border-radius: 15px 15px 0px 0px;
+    background-color: #F199FF;
+    box-shadow: 0px 5px black;
+    font-family: var(--font-title);
+    padding: 1%;
+}
+
+main .card2 p{
+    padding: 3%;
+    font-family: var(--font-text);
+}
+
+main .card2 h2{
+    text-align: center;
+    font-family: var(--font-title);
+}
+
+main .card2 ul{
+    column-count: 2;
+    column-gap: 11%;
+    margin: 1%;
+    padding-left: 8%;
+}
+main .card2 ul li{
+    padding: 1.2%;
+    font-family: var(--font-text);
+}
+
+/*CARD 3 - JOGOS*/
+main .card3{
+    background-color: #E5FFE5;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: var(--standard-shadow);
+
+    margin-bottom: 5%;
+}
+
+main .card3 .title_card3{
+    border-radius: 15px 15px 0px 0px;
+    background-color: #99FF99;
+    box-shadow: 0px 5px black;
+    font-family: var(--font-title);
+    padding: 1%;
+}
+
+main .card3 p{
+    padding: 3%;
+    font-family: var(--font-text);
+}
+
+main .card3 h2{
+    text-align: center;
+    font-family: var(--font-title);
+}
+
+main .card3 ul{
+    margin: 1%;
+    padding-left: 8%;
+}
+main .card3 ul li{
+    padding: 1%;
+    font-family: var(--font-text);
+}
+
+/*CARD 4 - SISTEMAS*/
+main .card4{
+    background-color: #E5FEFF;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: var(--standard-shadow);
+
+    margin-bottom: 5%;
+}
+
+main .card4 .title_card4{
+    border-radius: 15px 15px 0px 0px;
+    background-color: #99FAFF;
+    box-shadow: 0px 5px black;
+    font-family: var(--font-title);
+    padding: 1%;
+}
+
+main .card4 p{
+    padding: 3%;
+    font-family: var(--font-text);
+}
+
+main .card4 h2{
+    text-align: center;
+    font-family: var(--font-title);
+}
+
+main .card4 ul{
+    column-count: 2;
+    column-gap: 11%;
+    margin: 1%;
+    padding-left: 8%;
+}
+main .card4 ul li{
+    padding: 1.2%;
+    font-family: var(--font-text);
+}
+
+/*IMAGEM*/
+.img{
+    position: relative;
+}
+
+.imagem, #gif{
+    position: absolute;
+    margin-top: -34%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+main #container-main .img1{
+    display: none;
+}
+
+main #container-main .img1 ~ .cards .card1:hover {
+    display: block;
+}

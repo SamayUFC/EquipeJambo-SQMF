@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/logo.svg">
 
-    <title>Tela Inicial</title>
+    <title>Formei? - Home</title>
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -14,32 +15,34 @@
     <header>
         <nav>
             <a href="index.html">
-                <img src="assets/jk-placeholder-image.jpg" alt="Logo do website. Temporariamente, uma imagem placeholder genérica, de fundo cinza, com um ícone de quadro ou janela mostrando uma montanha e um sol simplificados">
+                <img src="assets/logo.svg" alt="Logo do website. Temporariamente, uma imagem placeholder genérica, de fundo cinza, com um ícone de quadro ou janela mostrando uma montanha e um sol simplificados">
             </a>
             
             <div>
                 <a href="index.html">Home</a>
-                <a href="calculator.html">Calculadora</a>
-                <a href="info-teste.html">Infográfico</a>
+                <a href="pages/calculator.html">Calculadora</a>
+                <a href="pages/info.html">Infográfico</a>
             </div>
         </nav>
     </header>
     
     <main>
         <div class="container-main">
-            <div class="intro">
-                <h1 class="title-main">FORMEI?</h1>
-                <p class="content-main">Conheça as nossas funcionalidades para entender o que é o SMD e gerenciar o seu progresso até a formatura!</p>
-                <a href="./calculator.html" class="link-main">Calcule seu progresso agora</a>
-                <img src="#" alt="">
+            <div class="landing">
+                <div class="intro">
+                    <h1 class="title-main">FORMEI?</h1>
+                    <p class="content-main">Conheça as nossas funcionalidades para entender o que é o SMD e gerenciar o seu progresso até a formatura!</p>
+                    <a href="pages/calculator.html" class="link-main">Calcule seu progresso agora</a>
+                    <div class="background-image" role="img" aria-label="Imagem com malha quadriculada de fundo. Em sobreposição, alternando-se em linhas, símbolos como emoji de sorriso, console de videogame, dados, etc. Todos têm cores um pouco dessaturadas e outline branco com borda preta."></div>
+                </div>
             </div>
             <div class="features">
                 <h2 class="section-title">Conheça as Funcionalidades</h2>
                 <div class="features-cards">
                     <section class="main-feature">
                         <div class="card" id="card-calculator">
-                            <a href="./calculator.html">
-                                <img src="assets/jk-placeholder-image.jpg" class="img-calculator" alt="Essa é uma imagem placeholder temporária, de fundo cinza, com um ícone de quadro ou janela mostrando uma montanha e um sol simplificados">
+                            <a href="pages/calculator.html">
+                                <img src="assets/formei-calculadora.svg" class="img-calculator" alt="Imagem de fundo rosa arroxeado sobreposto por uma calculadora rodeada de alguns símbolos de estrelas com diferentes números de pontas que representam brilho. A calculadora tem um rosto com um sorriso e dois olhos e veste um capelo, chapéu que acompanha a beca em formaturas.">
                                 <div class="text-card" id="text-calculator">
                                     <h3>Calculadora</h3>
                                     <p>Calcule o quanto falta para sua formatura do curso de Sistemas e Mídias Digitais.</p>
@@ -49,8 +52,8 @@
                     </section>
                     <section class="others">
                         <div class="card" id="card-info">
-                            <a href="info-teste.html">
-                                <img src="assets/jk-placeholder-image.jpg" class="img-info" alt="Essa é uma imagem placeholder temporária, de fundo cinza, com um ícone de quadro ou janela mostrando uma montanha e um sol simplificados">
+                            <a href="pages/info.html">
+                                <img src="assets/infográfico.svg" class="img-info" alt="Essa é uma imagem placeholder temporária, de fundo cinza, com um ícone de quadro ou janela mostrando uma montanha e um sol simplificados">
                                 <div class="text-card" id="text-info">
                                     <h3>Infográfico</h3>
                                     <p>Descubra mais informações sobre o SMD!</p>
@@ -61,7 +64,7 @@
                 </div>
             </div>
             <div class="team">
-                <h2 class="section-title" style="margin: 6% auto 2%;">A Jambo</h2>
+                <h2 class="section-title">A Jambo</h2>
                 <div class="team-infos">
                     <section class="team-text" style="margin-bottom: 10%;">
                         <h3>Nosso projeto</h3>
@@ -98,7 +101,7 @@
                                 </div>
                                 <section class="team-single-text">
                                     <h4>Bruno Nóbrega</h4>
-                                    <p>Ingressou no SMD em 2022.1 e tem interesse pela trilha de Sistemas. Além disso, colaborou no projeto “Formei?” como desenvolvedor front-end.</p>
+                                    <p>É aluno do SMD desde 2022.1 e tem interesse pela trilha de Sistemas. Além disso, participou no projeto “Formei?” como desenvolvedor front-end.</p>
                                 </section>
                             </section>
                             <section class="team-single">
@@ -107,7 +110,7 @@
                                 </div>
                                 <section class="team-single-text">
                                     <h4>Gabriel Albuquerque</h4>
-                                    <p>É aluno do SMD desde 2022.1.  Participou do projeto “Formei?” como Gestor e “Faz tudo”. A sua área vai do Audiovisual até a programação de Jogos Digitais.</p>
+                                    <p>É aluno do SMD desde 2022.1. Participou do projeto “Formei?” como Gestor e “Faz tudo”. A sua área vai do Audiovisual até a programação de Jogos Digitais.</p>
                                 </section>
                             </section>
                             <section class="team-single">
@@ -116,7 +119,7 @@
                                 </div>
                                 <section class="team-single-text">
                                     <h4>Mariana Batista</h4>
-                                    <p>Ingressou no SMD em 2022.1. Além do mais, ela colaborou no projeto “Formei?” como UX Writer e Designer. A sua área de interesse é trilha de Design.</p>
+                                    <p>Ingressou no SMD em 2022.1. Além do mais, colaborou no projeto “Formei?” como UX Writer e Designer. A sua área de interesse é trilha de Design.</p>
                                 </section>
                             </section>
                             <section class="team-single">

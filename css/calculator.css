@@ -63,6 +63,7 @@ main .container-main {
     margin: 0 4% 0.5em 4%;
     font-family: var(--font-text);
     font-size: 1.3em;
+    color: #000000;
 }
 
 .title{
@@ -119,8 +120,11 @@ main .container-main {
 }
 
 .container-main .linkCalculator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 5rem auto;
     padding: 0.5rem 1.5rem;
     width: fit-content;
     height: auto;
@@ -131,11 +135,14 @@ main .container-main {
     border-radius: 16px;
     border: none;
     text-decoration: none;
-    color: #000000
+    color: #000000;
+    margin: 2rem auto;
+    transition: 0.15s;
 }
 
 .container-main .linkCalculator:hover {
     cursor: pointer;
     color: inherit;
     text-decoration: underline;
+    transform: scale(1.05);
 }

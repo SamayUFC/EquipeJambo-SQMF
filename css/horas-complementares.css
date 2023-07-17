@@ -1,0 +1,367 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Lexend+Mega:wght@800&family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: black 1px solid; */
+}
+
+:root{
+    --corheader: #da5555;
+    --font-header: 'Lexend', sans-serif;
+    --font-title: 'Lexend Mega', sans-serif;
+    --font-text: 'Nunito', sans-serif;
+
+    --standard-shadow: 4px 4px black;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 1em 4%;
+}
+
+header nav img {
+    height: 60px;
+    width: 90px;
+}
+
+header nav div{
+    display: flex;
+}
+
+header nav div a{
+    text-decoration: none;
+    color: #000000;
+    font-family: var(--font-header);
+    font-size: 1em;
+    margin-left: 2rem;
+}
+
+header nav div a:hover{
+    cursor: pointer;
+    color: inherit;
+    text-decoration: underline;
+}
+
+body{
+    background-color: #faf5f2;
+}
+
+/*CABEÇALHO DA MAIN*/
+main #container-main{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 90px;
+}
+
+main #description{
+    margin: 0 4% 0.5em 4%;
+    font-family: var(--font-text);
+    font-size: 1.3em;
+}
+
+main #description .title{
+    font-family: var(--font-title);
+    color: #000000;
+    background: #DDB2FF;
+    width: fit-content;
+    margin-bottom: 0.5em;
+    border: 2px solid black;
+    border-radius: 0 0 16px 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em 1em;
+}
+
+main #description p{
+    width: 40%;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+/*MAIN CONFIGURAÇÕES GERAIS*/ 
+main .quadrado1, .quadrado2, .quadrado3, .quadrado4, .quadrado5, .quadrado6, .quadrado7{
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000000;
+    border-top: none;
+}
+
+main .quadrado1 {
+    border-top: 2px solid #000000;
+}
+
+main h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-title);
+    padding-top: 40%;
+}
+
+/*QUADRADO 1*/
+main .quadrado1 .content-horas1 .title-horas1{
+    margin-left: -250%;
+    margin-top: -60%;
+
+    font-family: var(--font-title);
+    background-color: #D5FFDF;
+    width: min-content;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em 1em;
+}
+
+main .content-horas1 p{
+    margin-left: -235%;
+    padding-top: 1em;
+    width: 150%;
+
+    font-family: var(--font-text);
+}
+
+main .content-horas1{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+main .quadrado1:hover > .content-horas1{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*QUADRADO 2*/
+main .quadrado2 .content-horas2 .title-horas2{
+    margin-left: 150%;
+    margin-top: -60%;
+
+    font-family: var(--font-title);
+    background-color: #FBE5FF;
+    width: 160%;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em 1em;
+}
+
+main .content-horas2 p{
+    margin-left: 165%;
+    padding-top: 1em;
+    width: 150%;
+
+    font-family: var(--font-text);
+}
+
+main .content-horas2{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+main .quadrado2:hover > .content-horas2{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*QUADRADO 3*/
+main .quadrado3 .content-horas3 .title-horas3{
+    margin-left: -260%;
+    margin-top: -60%;
+
+    font-family: var(--font-title);
+    background-color: #E5FEFF;
+    width: 175%;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em 1em;
+}
+
+main .content-horas3 p{
+    margin-left: -245%;
+    padding-top: 1em;
+    width: 150%;
+
+    font-family: var(--font-text);
+}
+
+main .content-horas3{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+main .quadrado3:hover > .content-horas3{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*QUADRADO 4*/
+main .quadrado4 .content-horas4 .title-horas4{
+    margin-left: 150%;
+    margin-top: -60%;
+
+    font-family: var(--font-title);
+    background-color: #FFF9E5;
+    width: 180%;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em 1em;
+}
+main .content-horas4 p{
+    margin-left: 165%;
+    padding-top: 1em;
+    width: 150%;
+
+    font-family: var(--font-text);
+}
+main .content-horas4{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+main .quadrado4:hover > .content-horas4{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*QUADRADO 5*/
+main .quadrado5 .content-horas5 .title-horas5{
+    margin-left: -260%;
+    margin-top: -60%;
+
+    font-family: var(--font-title);
+    background-color: #FFE5E7;
+    width: 175%;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 0.5em 1em;
+}
+main .content-horas5 p{
+    margin-left: -245%;
+    padding-top: 1em;
+    width: 150%;
+
+    font-family: var(--font-text);
+}
+main .content-horas5{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+main .quadrado5:hover > .content-horas5{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*QUADRADO 6*/
+main .quadrado6 .content-horas6 .title-horas6{
+    margin-left: 150%;
+    margin-top: -60%;
+
+    font-family: var(--font-title);
+    background-color: #FFE5F6;
+    width: 180%;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 1em 1em;
+}
+main .content-horas6 p{
+    margin-left: 165%;
+    padding-top: 1em;
+    width: 150%;
+
+    font-family: var(--font-text);
+}
+main .content-horas6{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+main .quadrado6:hover > .content-horas6{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*QUADRADO 7*/
+main .quadrado7 .content-horas7 .title-horas7{
+    margin-left: -260%;
+    margin-top: -60%;
+
+    font-family: var(--font-title);
+    background-color: #FFF2E5;
+    width: 175%;
+    border: 2px solid black;
+    border-radius: 16px;
+    box-shadow: var(--standard-shadow);
+    padding: 1em 1em;
+}
+main .content-horas7 p{
+    margin-left: -245%;
+    padding-top: 1em;
+    width: 150%;
+
+    font-family: var(--font-text);
+}
+main .content-horas7{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+main .quadrado7:hover > .content-horas7{
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+/*CORES DOS QUADRADOS*/
+main .quadrado1{
+    background-color: #99FF99;
+}
+
+main .quadrado2{
+    background-color: #F199FF;
+}
+
+main .quadrado3{
+    background-color: #99FAFF;
+}
+
+main .quadrado4{
+    background-color: #FFE799;
+}
+
+main .quadrado5{
+    background-color: #ff7881;
+}
+
+main .quadrado6{
+    background-color: #ff83d4;
+}
+
+main .quadrado7{
+    background-color: #ffbb7b;
+}

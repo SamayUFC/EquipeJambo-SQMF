@@ -49,3 +49,30 @@ class Usuario extends Model {
 - Mariana Batista
 - Rebeca Costa
 - Samay Pessoa
+
+## Requisitos funcionais
+| Requisitos | Status | Código |
+|----------|----------|----------|
+| Escolher matriz curricular considerada. | Não implementado |  |
+| Selecionar disciplinas obrigatórias cursadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptDisciplinas.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptDisciplinas.js), [multi-select-dropdown.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/multi-select-dropdown.js) |
+| Selecionar disciplinas eletivas cursadas. | Implementado | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptDisciplinas.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptDisciplinas.js), [multi-select-dropdown.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/multi-select-dropdown.js)  |
+| Selecionar disciplinas optativas cursadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptDisciplinas.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptDisciplinas.js), [multi-select-dropdown.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/multi-select-dropdown.js)  |
+| Informar horas complementares realizadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptActivities.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptActivities.js)  |
+| Exibir disciplinas obrigatórias e eletivas que faltam para conclusão do curso. | Em andamento   | [report.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/report.html)  |
+| Exibir horas complementares restantes necessárias para conclusão do curso. | Implementado   | [report.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/report.html)  |
+| Exportar dados (disciplinas e horas complementares restantes) exibidos pela calculadora. | Não implementado   |  |
+| Exibir infográfico interativo-descritivo. | Implementado   | [info.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/info.html), [grade-curricular.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/grade-curricular.html), [trilhas.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/trilhas.html), [horas-complementares.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/horas-complementares.html)  |
+| Exibir e explicar o que são as trilhas e como funcionam.  | Implementado   | [trilhas.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/trilhas.html) |
+| Exibir e explicar o que são as horas complementares. | Implementado   | [horas-complementares.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/horas-complementares.html) |
+| Exibir e explicar o que são as disciplinas obrigatórias e eletivas. | Implementado   | [grade-curricular.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/grade-curricular.html) |
+| Disponibilizar acesso aos dados da matriz curricular  | Implementado   |  |
+| Disponibilizar acesso aos dados das disciplinas | Implementado   |  |
+| Alterar registro na tabela de matriz curriculares | Implementado   |  |
+| Excluir registro da tabela de matriz curriculares | Implementado   |  |
+| Integrar sistema ao banco  | Implementado   |  |
+| Incluir registro na tabela de disciplinas  | Implementado   |  |
+| Alterar registro na tabela de disciplinas | Implementado   |  |
+| Excluir registro da tabela de disciplinas  | Implementado   |  |
+| Incluir registro na tabela de requisitos | Implementado   |  |
+| Excluir registro da tabela de requisitos | Implementado   |  |
+

@@ -150,24 +150,35 @@ const MultiSelectDropdown = (params) => {
         }
         //Total de horas optativas exibidas na barra superior e, para testes, no console, para verificar se
         //valor está sendo inserido no input placeholder que será usado para levar as informações do form
-        displayHours.innerHTML = selectedOptionalTotalValue;
-        inputPlaceholder.value = selectedOptionalTotalValue;
         document.querySelectorAll(".form-check-input")
         .forEach(input=> {
-          input.addEventListener("change",calculateWithCheckboxes)
+          input.addEventListener("click",calculateWithCheckboxes)
         });
 
         function calculateWithCheckboxes(){
-          selectedDisciplinesTotalValues = 0;
-          document.querySelectorAll(".form-check-input")
+          selectedElectiveTotalValue = 0;
+          selectedMandatoryTotalValue = 0;
+          
+          mandatoryPanel.querySelectorAll(".form-check-input")
           .forEach(input=> {
             if (input.checked) {
-              selectedDisciplinesTotalValues += Number.parseInt(input.getAttribute("value"));
+              selectedMandatoryTotalValue += Number.parseInt(input.getAttribute("value"));
             }
           });
+
+          electivePanel.querySelectorAll(".form-check-input")
+          .forEach(input=> {
+            if (input.checked) {
+              selectedElectiveTotalValue += Number.parseInt(input.getAttribute("value"));
+              selectedOptionalTotalValue += Number.parseInt(input.getAttribute("value"));
+            }
+          });
+
+          selectedDisciplinesTotalValues = selectedElectiveTotalValue + selectedMandatoryTotalValue;
         }
+
         if (selectedDisciplinesTotalValues+selectedOptionalTotalValue > 0) {
-          displayHours.innerHTML = selectedDisciplinesTotalValues+selectedOptionalTotalValue;
+          displayHours.innerHTML = selectedDisciplinesTotalValues + selectedOptionalTotalValue + Number(document.getElementById('sumActivities').innerHTML);
         } else {
           displayHours.innerHTML = "0";
         }

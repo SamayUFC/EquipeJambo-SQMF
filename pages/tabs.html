@@ -2,9 +2,10 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Calculadora</title>
-    <link rel="stylesheet" type="text/css" href="css/tabs.css">
+    <title>Formei? - Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="../css/tabs.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assets/logo.svg">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -16,14 +17,14 @@
 <body>
     <header>
         <nav>
-            <a href="index.html">
-                <img src="assets/jk-placeholder-image.jpg" alt="Logo do website. Temporariamente, uma imagem placeholder genérica, de fundo cinza, com um ícone de quadro ou janela mostrando uma montanha e um sol simplificados">
+            <a href="../index.html">
+                <img src="../assets/logo.svg" alt="Logo do website. Temporariamente, uma imagem placeholder genérica, de fundo cinza, com um ícone de quadro ou janela mostrando uma montanha e um sol simplificados">
             </a>
             
             <div>
-                <a href="index.html">Home</a>
-                <a href="calculator.html">Calculadora</a>
-                <a href="info-teste.html">Infográfico</a>
+                <a href="../index.html">Home</a>
+                <a href="./calculator.html">Calculadora</a>
+                <a href="./info.html">Infográfico</a>
             </div>
         </nav>
     </header>
@@ -41,7 +42,7 @@
                     </h2>
                 </div>
             </div>
-            <form action="report.html" method="post" id="tabbedInputs">
+            <form action="./report.html" method="post" id="tabbedInputs">
                 <div class="tabContainer">
                     <div class="buttonContainer">
                         <button onclick="showPanel(0,'#E5FEFF')" style="border-left: 2px solid black;" type="button" id="buttonFirst">Obrigatórias</button>
@@ -50,7 +51,7 @@
                         <button onclick="showPanel(3,'#FBE5FF')" style="border-right: 2px solid black;" type="button" id="buttonFourth">Atividades</button>
                     </div>
                     <div class="contentContainer">
-                        <div class="tabPanel">
+                        <div class="tabPanel" id="Obrigatórias">
                             <div>
                                 <div class="semestresObrigatorias">
                                     <div id="primeiroSemestre" class="termContainer">
@@ -110,7 +111,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tabPanel">
+                        <div class="tabPanel" id="Eletivas">
                             <div class="semestresEletivas">
                                 <div id="quartoSemestreEletivas" class="termContainer">
                                     <div class="semestreHeaderEletivas">
@@ -126,7 +127,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tabPanel">
+                        <div class="tabPanel" id="Optativas">
                             <div class="wrapper">
                                 <div class="wrapper">
                                   <div class="container" id="dropdownSelected" style="display: none;">
@@ -140,7 +141,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tabPanel">
+                        <div class="tabPanel" id="Atividades">
                             <div class="containerActivities">
                                 <div class="descriptionActivities">
                                     <h3>Horas complementares</h3>
@@ -198,35 +199,46 @@
                             </div>
                         </div>
                     </div>
-                    <input type="submit" value="Calcular" id="submitCheckboxes">
+                    <input type="submit" value="Calcular" id="submitCheckboxes" onclick="tosubmit()">
                 </div>
             </form>
         </div>
     </main>
  
     <script>
-        let selectedOptionalTotalValue;
+        let selectedOptionalTotalValue, selectedElectiveTotalValue, selectedMandatoryTotalValue;
         let selectedDisciplinesTotalValues;
+        let totalActivities;
+        const mandatoryPanel = document.getElementById("Obrigatórias");
+        const electivePanel = document.getElementById("Eletivas");
+        const optionalPanel = document.getElementById("Optativas");
+        const activityPanel = document.getElementById("Atividades");
         const displayHours = document.getElementById("totalHoursDisplay");
         const inputPlaceholder = document.getElementById("inputPlaceholder");
     </script>
-    <script src="js/scriptTabs.js"></script>
-    <script src="js/scriptDisciplinas.js"></script>
-    <script src="js/scriptActivities.js"></script>
+    <script src="../js/scriptTabs.js"></script>
+    <script src="../js/scriptDisciplinas.js"></script>
+    <script src="../js/scriptActivities.js"></script>
     <script>
+        const form = document.getElementById('tabbedInputs');
+        form.addEventListener('keypress', function(e) {
+            let key = e.charCode || e.keyCode || 0;     
+            if (key == 13) {
+              e.preventDefault();
+            }
+        });
+
         function tosubmit() {
-            let optionalsTotalHours = inputPlaceholder.value;
+            localStorage.setItem("selectedMandatoryTotalValue", Number(selectedMandatoryTotalValue));
+            localStorage.setItem("selectedElectiveTotalValue", Number(selectedElectiveTotalValue));
+            localStorage.setItem("selectedOptionalTotalValue", Number(selectedOptionalTotalValue + selectedElectiveTotalValue));
+            localStorage.setItem("totalActivities", Number(totalActivities));
 
-            localStorage.setItem("optionalsTotalHours", optionalsTotalHours);
-
+            
             return true;
         }
-
-        // window.addEventListener('load', ()=>{
-        //     MultiSelectDropdown(window.MultiSelectDropdownOptions);
-        // });
     </script>
-    <script src="js/multi-select-dropdown.js"></script>
+    <script src="../js/multi-select-dropdown.js"></script>
 
 
 </body>

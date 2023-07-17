@@ -51,36 +51,44 @@ main {
     color: #000000;
 }
 
-main .container-main .intro{
+main .container-main .landing {
+    display: block;
+    margin-bottom: 4%;
+    height: 40rem;
+    width: 100%;
+    right: 0;
+    background-image: url(../assets/landingpage-image.svg);
+    background-repeat: repeat-y;
+    background-color: #FFFFFF;
+}
+
+main .container-main .landing .intro{
     display: flex;
     flex-direction: column;
     align-items: start;
     background: #DDB2FF;
 
+    width: 100%;
     text-align: left;
 
     padding: 0.5rem 8%;
-
-    bottom: 0;
-
-    right: 0;
 }
 
-main .container-main .intro .title-main{
+main .container-main .landing .intro .title-main{
     font-family: var(--font-title);
     font-size: 10em;
     letter-spacing: -0.1em;
     width: fit-content;
 }
 
-main .container-main .intro p{
+main .container-main .landing .intro p{
     font-family: var(--font-header);
     font-size: 1.5em;
     padding: 0 1.2rem;
     width: 65%;
 }
 
-main .container-main .intro .link-main{
+main .container-main .landing .intro .link-main{
     margin: 2rem 1.2rem;
     padding: 1rem 2rem;
     width: fit-content;
@@ -92,13 +100,15 @@ main .container-main .intro .link-main{
     border-radius: 16px;
     border: none;
     text-decoration: none;
-    color: #000000
+    color: #000000;
+    transition: 0.15s;
 }
 
-main .container-main .intro .link-main:hover{
+main .container-main .landing .intro .link-main:hover{
     cursor: pointer;
     color: inherit;
     text-decoration: underline;
+    transform: scale(1.03);
 }
 
 main .container-main .section-title{
@@ -106,7 +116,7 @@ main .container-main .section-title{
     padding: 1.5rem;
     text-align: center;
     width: 92%;
-    margin: 12% auto 2%;
+    margin: 2% auto;
     background: #DDB2FF;
     border: 2px #000000 solid;
     border-radius: 16px;
@@ -115,10 +125,18 @@ main .container-main .section-title{
 
 main .container-main .features .features-cards {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.20fr 0.75fr;
     width: 100%;
     padding: 0 4%;
-    grid-column-gap: 4%;
+    grid-column-gap: 6%;
+}
+
+main .container-main .features .features-cards .card {
+    transition: 0.15s;
+}
+
+main .container-main .features .features-cards .card:hover {
+    transform: scale(1.03);
 }
 
 main .container-main .features .card, #card-calculator{
@@ -130,7 +148,8 @@ main .container-main .features .card, #card-calculator{
 
 main .container-main .features .card .img-calculator {
     width: 100%;
-    height: 22rem;
+    height: 22.5rem;
+    object-fit: cover;
 }
 
 main .container-main .features .card, #card-info{
@@ -143,7 +162,8 @@ main .container-main .features .card, #card-info{
 
 main .container-main .features .card .img-info {
     width: 100%;
-    height: 22rem;
+    height: 22.5rem;
+    object-fit: cover;
 }
 
 main .container-main .features .card .text-card {
@@ -184,7 +204,7 @@ main .container-main .team .team-infos h3 {
     padding: 1rem;
     text-align: center;
     width: max-content;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     background: #DDB2FF;
     border: 2px #000000 solid;
     border-radius: 16px;
