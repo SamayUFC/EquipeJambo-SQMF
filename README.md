@@ -54,10 +54,10 @@ class Usuario extends Model {
 | Requisitos | Status | Código |
 |----------|----------|----------|
 | Escolher matriz curricular considerada. | Não implementado |  |
-| Selecionar disciplinas obrigatórias cursadas.   | Implementado   | tabs.html, tabs.css, multi-select-dropdown.js, scriptDisciplinas |
-| Selecionar disciplinas eletivas cursadas.   | Implementado | Valor Z  |
-| Selecionar disciplinas optativas cursadas.  | Implementado   | Valor W  |
-| Informar horas complementares realizadas.   | Implementado   | Valor V  |
+| Selecionar disciplinas obrigatórias cursadas.   | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html) |
+| Selecionar disciplinas eletivas cursadas.   | Implementado | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html)  |
+| Selecionar disciplinas optativas cursadas.  | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html)  |
+| Informar horas complementares realizadas.   | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html)  |
 | Exibir disciplinas obrigatórias e eletivas que faltam para conclusão do curso.    | Em andamento   | Valor V  |
 | Exibir horas complementares restantes necessárias para conclusão do curso.    | Implementado   | Valor V  |
 | Exportar dados (disciplinas e horas complementares restantes) exibidos pela calculadora.    | Não implementado   | Valor V  |
