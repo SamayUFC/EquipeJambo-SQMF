@@ -65,14 +65,14 @@ class Usuario extends Model {
 | Exibir e explicar o que são as trilhas e como funcionam.  | Implementado   | [trilhas.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/trilhas.html) |
 | Exibir e explicar o que são as horas complementares. | Implementado   | [horas-complementares.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/horas-complementares.html) |
 | Exibir e explicar o que são as disciplinas obrigatórias e eletivas. | Implementado   | [grade-curricular.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/grade-curricular.html) |
-| Disponibilizar acesso aos dados da matriz curricular  | Implementado   |  |
-| Disponibilizar acesso aos dados das disciplinas | Implementado   |  |
-| Alterar registro na tabela de matriz curriculares | Implementado   |  |
-| Excluir registro da tabela de matriz curriculares | Implementado   |  |
-| Integrar sistema ao banco  | Implementado   |  |
-| Incluir registro na tabela de disciplinas  | Implementado   |  |
-| Alterar registro na tabela de disciplinas | Implementado   |  |
-| Excluir registro da tabela de disciplinas  | Implementado   |  |
-| Incluir registro na tabela de requisitos | Implementado   |  |
-| Excluir registro da tabela de requisitos | Implementado   |  |
+| Disponibilizar acesso aos dados da matriz curricular  | Implementado   | [MatrizcurricularController.php get( )](api_meuDiploma/src/controllers/MatrizcurricularController.php)  | 
+| Disponibilizar acesso aos dados das disciplinas | Implementado   | [DisciplinaController.php get( )](api_meuDiploma/src/controllers/DisciplinaController.php) |
+| Alterar registro na tabela de matriz curriculares | Implementado   | [MatrizcurricularController.php update( )](api_meuDiploma/src/controllers/MatrizcurricularController.php) |
+| Excluir registro da tabela de matriz curriculares | Implementado   | [MatrizcurricularController.php detele( )](api_meuDiploma/src/controllers/MatrizcurricularController.php) |
+| Integrar sistema ao banco  | Implementado   | [scriptDisciplinas.js](js/scriptDisciplinas.js) |
+| Incluir registro na tabela de disciplinas  | Implementado   | [DisciplinaController.php insert( )](api_meuDiploma/src/controllers/DisciplinaController.php) |
+| Alterar registro na tabela de disciplinas | Implementado   | [DisciplinaController.php update( )](api_meuDiploma/src/controllers/DisciplinaController.php) |
+| Excluir registro da tabela de disciplinas  | Implementado   | [DisciplinaController.php delet( )](api_meuDiploma/src/controllers/DisciplinaController.php) |
+| Incluir registro na tabela de requisitos | Implementado   | [DisciplinaController.php insertR( )](api_meuDiploma/src/controllers/DisciplinaController.php) |
+| Excluir registro da tabela de requisitos | Implementado   | [DisciplinaController.php deleteR( )](api_meuDiploma/src/controllers/DisciplinaController.php) |
 
