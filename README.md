@@ -54,10 +54,10 @@ class Usuario extends Model {
 | Requisitos | Status | Código |
 |----------|----------|----------|
 | Escolher matriz curricular considerada. | Não implementado |  |
-| Selecionar disciplinas obrigatórias cursadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [tabs.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptTabs.js) |
-| Selecionar disciplinas eletivas cursadas. | Implementado | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [tabs.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptTabs.js)  |
-| Selecionar disciplinas optativas cursadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [tabs.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptTabs.js)  |
-| Informar horas complementares realizadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [tabs.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptTabs.js)  |
+| Selecionar disciplinas obrigatórias cursadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptDisciplinas.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptDisciplinas.js) |
+| Selecionar disciplinas eletivas cursadas. | Implementado | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptDisciplinas.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptDisciplinas.js)  |
+| Selecionar disciplinas optativas cursadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptDisciplinas.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptDisciplinas.js)  |
+| Informar horas complementares realizadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptActivities.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptActivities.js)  |
 | Exibir disciplinas obrigatórias e eletivas que faltam para conclusão do curso. | Em andamento   | Valor V  |
 | Exibir horas complementares restantes necessárias para conclusão do curso. | Implementado   | Valor V  |
 | Exportar dados (disciplinas e horas complementares restantes) exibidos pela calculadora. | Não implementado   | Valor V  |
