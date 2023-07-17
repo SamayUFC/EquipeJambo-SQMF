@@ -54,7 +54,7 @@ class Usuario extends Model {
 | Requisitos | Status | Código |
 |----------|----------|----------|
 | Escolher matriz curricular considerada. | Não implementado |  |
-| Selecionar disciplinas obrigatórias cursadas.   | Implementado   |   |
+| Selecionar disciplinas obrigatórias cursadas.   | Implementado   | tabs.html, tabs.css, multi-select-dropdown.js, scriptDisciplinas |
 | Item 3   | Item C   | Valor Z  |
 | Item 4   | Item D   | Valor W  |
 | Item 5   | Item E   | Valor V  |
