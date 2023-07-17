@@ -58,8 +58,8 @@ class Usuario extends Model {
 | Selecionar disciplinas eletivas cursadas. | Implementado | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptDisciplinas.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptDisciplinas.js), [multi-select-tag.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/multi-select-dropdown.js)  |
 | Selecionar disciplinas optativas cursadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptDisciplinas.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptDisciplinas.js), [multi-select-tag.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/multi-select-dropdown.js)  |
 | Informar horas complementares realizadas. | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [scriptActivities.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptActivities.js)  |
-| Exibir disciplinas obrigatórias e eletivas que faltam para conclusão do curso. | Em andamento   | Valor V  |
-| Exibir horas complementares restantes necessárias para conclusão do curso. | Implementado   | Valor V  |
+| Exibir disciplinas obrigatórias e eletivas que faltam para conclusão do curso. | Em andamento   | [report.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/report.html)  |
+| Exibir horas complementares restantes necessárias para conclusão do curso. | Implementado   | [report.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/report.html)  |
 | Exportar dados (disciplinas e horas complementares restantes) exibidos pela calculadora. | Não implementado   | Valor V  |
 | Exibir infográfico interativo-descritivo. | Implementado   | Valor V  |
 | Exibir e explicar o que são as trilhas e como funcionam.  | Implementado   | Valor V  |
