@@ -103,6 +103,7 @@ main #container-main .container-cards a:hover {
 
 main #container-main .container-cards .card-image{
     width: 350px;
+    height: 260px;
 }
 
 main #container-main .container-cards .grade, .horas, .trilhas{
@@ -127,6 +128,7 @@ main .container-cards .trilhas{
     background-color: #FBE5FF;
     border-radius: 16px;
     overflow: hidden;
+    object-fit: cover;
 }
 
 main .container-cards .horas{
