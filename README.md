@@ -51,10 +51,10 @@ class Usuario extends Model {
 - Samay Pessoa
 
 ##Requisitos funcionais
-| Coluna 1 | Coluna 2 | Coluna 3 |
+| Requisitos | Status | Código |
 |----------|----------|----------|
-| Escolher matriz curricular considerada.    | Item A   | Valor X  |
-| Item 2   | Item B   | Valor Y  |
+| Escolher matriz curricular considerada. | Não implementado |  |
+| Selecionar disciplinas obrigatórias cursadas.   | Implementado   |   |
 | Item 3   | Item C   | Valor Z  |
 | Item 4   | Item D   | Valor W  |
 | Item 5   | Item E   | Valor V  |
