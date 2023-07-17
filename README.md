@@ -1,7 +1,7 @@
-# Jambo
+# Equipe Jambo
 
 ## Projeto Formei?
-Este projeto é desenvolvido por estudantes da Universidade Federal do Ceará, para a disciplina de Projeto Integrado I, com o intuito de ajudar os discentes do curso de Sistemas e Mídias Digitais a calcular o seu progresso no curso. 
+Este projeto é desenvolvido por estudantes da Universidade Federal do Ceará, para a disciplina de Projeto Integrado I, com o intuito de ajudar os discentes do curso de Sistemas e Mídias Digitais a calcular e entender o seu progresso no curso. 
 
 ## Instalação
 
