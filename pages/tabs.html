@@ -207,8 +207,10 @@
  
     <script>
         let selectedOptionalTotalValue, selectedElectiveTotalValue, selectedMandatoryTotalValue;
+        let qttMandatory, qttElective, qttOptional;
         let selectedDisciplinesTotalValues;
-        let totalActivities;
+        let missingMandatories, missingElectives, missingOptionals;
+        let totalActivities, totalTCC;
         const mandatoryPanel = document.getElementById("Obrigatórias");
         const electivePanel = document.getElementById("Eletivas");
         const optionalPanel = document.getElementById("Optativas");
@@ -233,8 +235,12 @@
             localStorage.setItem("selectedElectiveTotalValue", Number(selectedElectiveTotalValue));
             localStorage.setItem("selectedOptionalTotalValue", Number(selectedOptionalTotalValue + selectedElectiveTotalValue));
             localStorage.setItem("totalActivities", Number(totalActivities));
+            localStorage.setItem("missingMandatories", Number(missingMandatories));
+            localStorage.setItem("missingElectives", Number(missingElectives));
+            localStorage.setItem("qttMandatory", Number(qttMandatory));
+            localStorage.setItem("qttElective", Number(qttElective));
+            localStorage.setItem("totalTCC", Number(totalTCC));
 
-            
             return true;
         }
     </script>

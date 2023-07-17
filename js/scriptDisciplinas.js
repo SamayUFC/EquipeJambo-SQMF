@@ -1,3 +1,16 @@
+const outFirst = document.querySelectorAll("#primeiroSemestreInputs");
+const outSecond = document.querySelectorAll("#segundoSemestreInputs");
+const outThird = document.querySelectorAll("#terceiroSemestreInputs");
+const outFourth = document.querySelectorAll("#quartoSemestreInputs");
+const outFifth = document.querySelectorAll("#quintoSemestreInputs");
+const outSixth = document.querySelectorAll("#sextoSemestreInputs");
+const outSeventh = document.querySelectorAll("#setimoSemestreInputs");
+const outEighth = document.querySelectorAll("#oitavoSemestreInputs");
+const outNinth = document.querySelectorAll("#nonoSemestreInputs");
+const outElectivesFourth = document.querySelectorAll('#quartoSemestreInputsEletivas');
+const outElectivesFifth = document.querySelectorAll('#quintoSemestreInputsEletivas');
+const outOptionals = document.getElementById("optionalsSelect");
+
 function url(params) {
     if(params){
         return "http://localhost/EquipeJambo-SQMF/api_meuDiploma/public/matriz/"+params
@@ -5,7 +18,6 @@ function url(params) {
         return "http://localhost/EquipeJambo-SQMF/api_meuDiploma/public/"; 
     }
 }
-
 
 function getAll() {
     const endpoint = url('78');             
@@ -15,6 +27,19 @@ function getAll() {
 
         .then(data => {
             console.log(data);
+
+            qttMandatory = data.disciplinas.filter(function (el) {
+                return el.componente == "OBRIGATÓRIA"
+            }).length;
+
+            qttElective = data.disciplinas.filter(function (el) {
+                return el.componente == "ELETIVA"
+            }).length;
+
+            qttOptative = data.disciplinas.filter(function (el) {
+                return el.componente == "OPTATIVA"
+            }).length;
+
             data.disciplinas.forEach((course) => {
                 if (course.natureza == "OBRIGATÓRIA") {
                     if (course.semestre == 1) {
@@ -80,8 +105,8 @@ function getAll() {
                             </span>
                         </div>`;
                     }
-                    if (course.semestre == 8) {
-                        if (course.componente != ("ATIVIDADES COMPLEMENTARES" || "TRABALHO DE CONCLUSÃO DE CURSO")) {
+                    if (course.semestre == 8) { 
+                        if (course.componente != ("ATIVIDADES COMPLEMENTARES")) {
                             outEighth[0].innerHTML = outEighth[0].innerHTML + 
                             `<div class="checkbox-container" style="position: relative; display: block; margin-right: 10%; margin-top: 1rem">
                                 <input style="display: inline-block; position: absolute" class="form-check-input" type="checkbox" id=${course.codigo} name=${course.componente} value=${course.cargahoraria} />
@@ -100,6 +125,7 @@ function getAll() {
                             </span>
                         </div>`;
                     }
+                    qttMandatory += 1;
                 }
                 if (course.natureza == "ELETIVA") {
                     if (course.semestre == 4) {
@@ -120,13 +146,13 @@ function getAll() {
                             </span>
                         </div>`;
                     }
+                    qttElective += 1;
                 }
                 if (course.natureza == "OPTATIVA") {
                     let newOption = document.createElement("option");
                     newOption.value = `${course.cargahoraria}`;
                     newOption.text = `${course.componente} (${course.cargahoraria}h)`;
                     outOptionals.appendChild(newOption);
-                    console.log(outOptionals.value);
                 }
             });
         })              
@@ -136,18 +162,5 @@ function getAll() {
 }
 
 getAll();
-
-const outFirst = document.querySelectorAll("#primeiroSemestreInputs");
-const outSecond = document.querySelectorAll("#segundoSemestreInputs");
-const outThird = document.querySelectorAll("#terceiroSemestreInputs");
-const outFourth = document.querySelectorAll("#quartoSemestreInputs");
-const outFifth = document.querySelectorAll("#quintoSemestreInputs");
-const outSixth = document.querySelectorAll("#sextoSemestreInputs");
-const outSeventh = document.querySelectorAll("#setimoSemestreInputs");
-const outEighth = document.querySelectorAll("#oitavoSemestreInputs");
-const outNinth = document.querySelectorAll("#nonoSemestreInputs");
-const outElectivesFourth = document.querySelectorAll('#quartoSemestreInputsEletivas');
-const outElectivesFifth = document.querySelectorAll('#quintoSemestreInputsEletivas');
-const outOptionals = document.getElementById("optionalsSelect");
 
 

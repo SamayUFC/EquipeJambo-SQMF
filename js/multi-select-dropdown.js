@@ -166,6 +166,9 @@ const MultiSelectDropdown = (params) => {
             }
           });
 
+          missingMandatories = qttMandatory - mandatoryPanel.querySelectorAll('input[type="checkbox"]:checked').length;
+          totalTCC = mandatoryPanel.querySelectorAll('input[name="TRABALHO DE CONCLUSÃO DE CURSO"]:checked').value;
+
           electivePanel.querySelectorAll(".form-check-input")
           .forEach(input=> {
             if (input.checked) {
@@ -173,6 +176,8 @@ const MultiSelectDropdown = (params) => {
               selectedOptionalTotalValue += Number.parseInt(input.getAttribute("value"));
             }
           });
+
+          missingElectives = qttElective - 3 - electivePanel.querySelectorAll('input[type="checkbox"]:checked').length;
 
           selectedDisciplinesTotalValues = selectedElectiveTotalValue + selectedMandatoryTotalValue;
         }

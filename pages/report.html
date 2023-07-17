@@ -39,11 +39,11 @@
                         <span id="textPrediction">Você se formará em: </span><span id="numberPrediction">XXXX.X</span>
                     </div>
                     <div style="margin: 2em 0 2em;">
-                        <p>Você tem 17 componentes pendentes!</p>
+                        <p>Você tem <span>XX</span> componentes pendentes!</p>
                         <p>De acordo com o que foi marcado, você ainda precisa concluir:</p>
-                        <p>13 disciplinas obrigatórias,<br>
-                            1 disciplina eletiva e<br>
-                            16 disciplinas optativas.</p>
+                        <p><span id="mandatoryLeftDisplay">0</span> disciplinas obrigatórias,<br>
+                            <span id="electiveLeftDisplay">0</span> disciplinas eletivas e<br>
+                            <span>XX</span> disciplinas optativas.</p>
                     </div>
                     <div style="font-size: 0.8em;">
                         * O resultado é calculado a partir das disciplinas marcadas durante o processo de input. Os criadores isentam-se de qualquer erro causado por reprovação, trancamento, matrícula indeferida, etc. Se persistirem as dúvidas, consulte a Secretaria do curso.
@@ -69,7 +69,7 @@
                             </div>
                             <div>
                                 <span>Atividade - TCC</span>
-                                <span class="hoursCard">0h/128h</span>
+                                <span class="hoursCard"><span id="displayFinal">0</span>h/128h</span>
                             </div>
                             <div>
                                 <span>Horas Complementares</span>
@@ -114,11 +114,22 @@
             let selectedElectiveTotalValue = localStorage.getItem("selectedElectiveTotalValue");
             let selectedOptionalTotalValue = localStorage.getItem("selectedOptionalTotalValue");
             let totalActivities = localStorage.getItem("totalActivities");
+            let missingMandatories = localStorage.getItem("missingMandatories");
+            let missingElectives = localStorage.getItem("missingElectives");
+            let qttMandatory = localStorage.getItem("qttMandatory");
+            let qttElective = localStorage.getItem("qttElective");
+            let totalTCC = localStorage.getItem("totalTCC");
+
+            document.getElementById("mandatoryLeftDisplay").innerHTML = Number(qttMandatory);
+            document.getElementById("electiveLeftDisplay").innerHTML = Number(qttElective - 3);
 
             if (selectedMandatoryTotalValue > 0) {
                 document.getElementById("displayMandatory").innerHTML = Number(selectedMandatoryTotalValue);
             }
             if (selectedElectiveTotalValue > 0) {
+                document.getElementById("displayElective").innerHTML = Number(selectedElectiveTotalValue);
+            } if (selectedElectiveTotalValue > 448) {
+                selectedElectiveTotalValue = 448;
                 document.getElementById("displayElective").innerHTML = Number(selectedElectiveTotalValue);
             }
             if (selectedOptionalTotalValue > 0) {
@@ -126,6 +137,18 @@
             }
             if (totalActivities > 0) {
                 document.getElementById("displayActivity").innerHTML = Number(totalActivities);
+            }
+            if (missingMandatories > 0) {
+                document.getElementById("mandatoryLeftDisplay").innerHTML = Number(missingMandatories);
+            }
+            if (missingElectives > 0) {
+                document.getElementById("electiveLeftDisplay").innerHTML = Number(missingElectives);
+            } else if (missingElectives < 0) {
+                missingElectives = 0;
+                document.getElementById("electiveLeftDisplay").innerHTML = Number(missingElectives);
+            }
+            if (totalTCC > 0) {
+                document.getElementById("displayFinal").innerHTML = Number(displayFinal);
             }
         }
     </script>
