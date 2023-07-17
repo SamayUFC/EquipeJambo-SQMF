@@ -49,3 +49,12 @@ class Usuario extends Model {
 - Mariana Batista
 - Rebeca Costa
 - Samay Pessoa
+
+##Requisitos funcionais
+| Coluna 1 | Coluna 2 | Coluna 3 |
+|----------|----------|----------|
+| Item 1   | Item A   | Valor X  |
+| Item 2   | Item B   | Valor Y  |
+| Item 3   | Item C   | Valor Z  |
+| Item 4   | Item D   | Valor W  |
+| Item 5   | Item E   | Valor V  |
