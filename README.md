@@ -60,7 +60,8 @@ class Usuario extends Model {
 | Informar horas complementares realizadas.   | Implementado   | [tabs.html](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/pages/tabs.html), [tabs.js](https://github.com/SamayUFC/EquipeJambo-SQMF/blob/dev/js/scriptTabs.js)  |
 | Exibir disciplinas obrigatórias e eletivas que faltam para conclusão do curso.    | Em andamento   | Valor V  |
 | Exibir horas complementares restantes necessárias para conclusão do curso.    | Implementado   | Valor V  |
-| Exportar dados (disciplinas e horas complementares restantes) exibidos pela calculadora.    | Não implementado   | Valor V  |
+| Exportar dados (disciplinas e horas complementares restantes) 
+exibidos pela calculadora.    | Não implementado   | Valor V  |
 | Exibir infográfico interativo-descritivo.    | Implementado   | Valor V  |
 | Exibir e explicar o que são as trilhas e como funcionam.    | Implementado   | Valor V  |
 | Exibir e explicar o que são as horas complementares.   | Implementado   | Valor V  |
